@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1587408748352.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "117684D0",
+    "lastKnownWriteTime" : 1587411117,
+    "last_content_update" : 1587411117285,
+    "path" : "C:/Users/Loube/Desktop/Education/OneDrive - CUNY/QC/Spring20/ECON382/R Programming/R_Lab/R_coding/wage_and_gender.R",
+    "project_path" : "wage_and_gender.R",
+    "properties" : {
+        "cursorPosition" : "13,0",
+        "scrollLine" : "5",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

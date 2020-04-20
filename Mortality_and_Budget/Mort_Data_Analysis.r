@@ -10,6 +10,6 @@ colnames(mort_data)[4:11] = c("mort_data", "prob_death", "ave_length_surv", "num
 
 mort_data # check if object is generated successfully
 
-stringr::str_locate(mort_data, "-")
+stringr::str_locate(mort_data$age, "-")[1,]
 
 

@@ -1,4 +1,4 @@
-# Data-Analysis
+### Data Analysis Repository ###
 Projects on analysis of data conducted in class during my senior year in the economics program.
 
 ## COIL ##
@@ -7,4 +7,4 @@ The Collaborative Online International Learning project aims at developing cross
 ## Analysis on mortality rate and states' budget allocation for hospitals ##
 A researcher is interested in the relationship between a state's mortality rate and its spending
 on hospitals (and other health services). The data come from different sources such as the US Census, the Bureau
-of Economic Analysis and the US Mortality Database. Check out the Econometrics folder for all the files and the script generated for this project. This was my senior year final project for Econometrics.
+of Economic Analysis and the US Mortality Database. Check out the Mortality_and_Budget folder for all the files and the script generated for this project. This was my senior year final project for Econometrics.

@@ -1,0 +1,11 @@
+
+<table style="text-align:center"><caption><strong>Statistical Summary</strong></caption>
+<tr><td colspan="8" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Statistic</td><td>N</td><td>Mean</td><td>St. Dev.</td><td>Min</td><td>Pctl(25)</td><td>Pctl(75)</td><td>Max</td></tr>
+<tr><td colspan="8" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">wage</td><td>1,000</td><td>12.817</td><td>8.244</td><td>0.840</td><td>7.000</td><td>16.350</td><td>64.080</td></tr>
+<tr><td style="text-align:left">female</td><td>1,000</td><td>0.491</td><td>0.500</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+<tr><td style="text-align:left">nonwhite</td><td>1,000</td><td>0.146</td><td>0.353</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td style="text-align:left">unionmember</td><td>1,000</td><td>0.164</td><td>0.370</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td style="text-align:left">education</td><td>1,000</td><td>13.183</td><td>2.865</td><td>0</td><td>12</td><td>16</td><td>20</td></tr>
+<tr><td style="text-align:left">experience</td><td>1,000</td><td>19.235</td><td>11.829</td><td>0</td><td>9</td><td>28</td><td>56</td></tr>
+<tr><td style="text-align:left">age</td><td>1,000</td><td>38.418</td><td>11.698</td><td>18</td><td>29</td><td>47</td><td>65</td></tr>
+<tr><td colspan="8" style="border-bottom: 1px solid black"></td></tr></table>

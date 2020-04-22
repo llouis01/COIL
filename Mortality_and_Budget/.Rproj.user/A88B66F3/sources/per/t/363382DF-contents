@@ -18,3 +18,6 @@ str_locate(mort_data$age, "-")[,1]
 str_length(mort_data$age)
 str_sub(str_length(str_locate(mort_data$age, "-")[,1]))
 mort_data$age
+
+
+inc_data = reshape(income_data, varying = names(income_data)[2:24], timevar = "Year", sep = ".", direction = "long")

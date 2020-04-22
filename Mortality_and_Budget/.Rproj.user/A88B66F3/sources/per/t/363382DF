@@ -5,20 +5,20 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1839727027",
+    "hash" : "3000136303",
     "id" : "363382DF",
-    "lastKnownWriteTime" : 1587359054,
-    "last_content_update" : 1587359054,
+    "lastKnownWriteTime" : 1587578498,
+    "last_content_update" : 1587578498660,
     "path" : "~/GitHub/Data_Analysis/Mortality_and_Budget/Mort_Data_Analysis.r",
     "project_path" : "Mort_Data_Analysis.r",
     "properties" : {
-        "cursorPosition" : "20,0",
-        "scrollLine" : "12"
+        "cursorPosition" : "23,0",
+        "scrollLine" : "14"
     },
     "read_only" : false,
     "read_only_alternatives" : [
     ],
-    "relative_order" : 2,
+    "relative_order" : 1,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "r_source"

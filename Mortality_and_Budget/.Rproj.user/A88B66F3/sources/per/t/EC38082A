@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1587894920504.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "EC38082A",
+    "lastKnownWriteTime" : 2482730676494692210,
+    "last_content_update" : 1587894920504,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "364261BB",
+        "caption" : "mortality_data",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=mortality_data&cache_key=364261BB",
+        "displayedObservations" : 69600,
+        "environment" : "",
+        "expression" : "mortality_data",
+        "object" : "mortality_data",
+        "preview" : 0,
+        "totalObservations" : 69600,
+        "variables" : 14
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

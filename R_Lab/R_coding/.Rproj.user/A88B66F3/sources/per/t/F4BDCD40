@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1587887148964.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "F4BDCD40",
+    "lastKnownWriteTime" : 2965939424577724960,
+    "last_content_update" : 1587887148964,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "id" : "ed51fd8e7f5440aa88077fd67fc8518b",
+        "name" : "ols1",
+        "title" : "ols1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "object_explorer"
+}

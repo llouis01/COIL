@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1587932952816.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3891422865",
+    "id" : "12A979E8",
+    "lastKnownWriteTime" : 1587939527,
+    "last_content_update" : 1587939527101,
+    "path" : "~/GitHub/Data_Analysis/R_Lab/R_coding/ucbAdmissions.R",
+    "project_path" : "ucbAdmissions.R",
+    "properties" : {
+        "cursorPosition" : "75,0",
+        "scrollLine" : "64",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

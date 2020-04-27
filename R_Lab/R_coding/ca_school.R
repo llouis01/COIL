@@ -5,3 +5,4 @@ output <- lm(testscr ~ str + el_pct, data = caschool)
 
 coef(output, vcov = vcovHC(output, type = "HC1"))
 # the coefficient shows the b0 and b1 of the regression as well as the intercept.
+

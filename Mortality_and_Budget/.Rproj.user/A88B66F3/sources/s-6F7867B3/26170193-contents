@@ -1,0 +1,451 @@
+state,year,percent_college,percent_highschool
+Alabama,2007,23.03,84.54
+Alabama,2008,23.74,85.36
+Alabama,2009,23.66,85.15
+Alabama,2010,23.3,84.3
+Alabama,2011,23.6,84.9
+Alabama,2012,24.63,87.05
+Alabama,2013,24.57,86.51
+Alabama,2014,24.79,86.91
+Alabama,2015,25.06,86.63
+Alaska,2007,26.56,92.05
+Alaska,2008,27.68,92.91
+Alaska,2009,27.11,92.76
+Alaska,2010,28.4,92
+Alaska,2011,26.5,93.5
+Alaska,2012,28.19,92.93
+Alaska,2013,27.73,93.92
+Alaska,2014,27.59,94.18
+Alaska,2015,29.62,93.38
+Arizona,2007,26.02,82.14
+Arizona,2008,25.79,81.8
+Arizona,2009,26.22,83.62
+Arizona,2010,26.3,85.1
+Arizona,2011,26.8,84.9
+Arizona,2012,27.59,85.49
+Arizona,2013,27.56,84.97
+Arizona,2014,27.64,85.63
+Arizona,2015,27.67,85.5
+Arkansas,2007,20.71,85.24
+Arkansas,2008,20.21,85.72
+Arkansas,2009,20.13,86.33
+Arkansas,2010,20.7,86.3
+Arkansas,2011,21.6,87.1
+Arkansas,2012,22.25,87.48
+Arkansas,2013,21.74,87.49
+Arkansas,2014,22.54,87.95
+Arkansas,2015,22.8,88.26
+California,2007,30.65,80.54
+California,2008,30.61,80.55
+California,2009,30.86,81.05
+California,2010,30.9,81.3
+California,2011,31,82.1
+California,2012,31.59,82.72
+California,2013,31.56,83.01
+California,2014,32.25,84.01
+California,2015,32.8,84.36
+Colorado,2007,36.49,88.59
+Colorado,2008,37.08,87.98
+Colorado,2009,37.35,88.63
+Colorado,2010,37.6,89
+Colorado,2011,38,89.7
+Colorado,2012,38.49,90.05
+Colorado,2013,38.63,89.95
+Colorado,2014,39.36,90.2
+Colorado,2015,39.95,91.08
+Connecticut,2007,37.41,91.11
+Connecticut,2008,38.25,91.7
+Connecticut,2009,38.25,91.1
+Connecticut,2010,38.2,90.5
+Connecticut,2011,38.4,91.1
+Connecticut,2012,39.44,92.2
+Connecticut,2013,39.74,91.65
+Connecticut,2014,40.24,91.32
+Connecticut,2015,40.38,92.06
+Delaware,2007,27.52,89.59
+Delaware,2008,29.26,88.16
+Delaware,2009,30.44,89.06
+Delaware,2010,29.4,87.8
+Delaware,2011,30.1,87.8
+Delaware,2012,30.89,89.38
+Delaware,2013,31.72,88.12
+Delaware,2014,32.13,89.27
+Delaware,2015,32.49,88.46
+Florida,2007,27.35,86.67
+Florida,2008,27.12,87.19
+Florida,2009,26.63,87.25
+Florida,2010,26.7,86.9
+Florida,2011,26.8,87.7
+Florida,2012,27.71,88.2
+Florida,2013,27.9,87.95
+Florida,2014,27.89,88.74
+Florida,2015,29.05,89.18
+Georgia,2007,28.95,85.62
+Georgia,2008,29.13,86.07
+Georgia,2009,29.17,86.11
+Georgia,2010,28.8,86.1
+Georgia,2011,29.1,86.3
+Georgia,2012,29.67,86.63
+Georgia,2013,29.53,86.67
+Georgia,2014,30.42,86.72
+Georgia,2015,31.12,87.15
+Hawaii,2007,31.25,94.07
+Hawaii,2008,31.09,95.29
+Hawaii,2009,31.67,95.17
+Hawaii,2010,31.1,94.2
+Hawaii,2011,30.1,94.4
+Hawaii,2012,31.27,93.81
+Hawaii,2013,32.71,95.32
+Hawaii,2014,32,94.88
+Hawaii,2015,32.18,93.96
+Idaho,2007,25.8,89.58
+Idaho,2008,25.39,88.3
+Idaho,2009,24.95,89.32
+Idaho,2010,25.6,89.5
+Idaho,2011,26.5,89.6
+Idaho,2012,26,90.75
+Idaho,2013,26.93,90.31
+Idaho,2014,25.57,90.11
+Idaho,2015,26.42,90.09
+Illinois,2007,32.18,88.43
+Illinois,2008,32.6,87.97
+Illinois,2009,33.24,88.91
+Illinois,2010,33.3,88.8
+Illinois,2011,33.5,89.3
+Illinois,2012,34.13,89.63
+Illinois,2013,34.52,89.36
+Illinois,2014,35.05,90.09
+Illinois,2015,35.25,90.23
+Indiana,2007,23.91,88.39
+Indiana,2008,24.74,88.16
+Indiana,2009,24.4,88.59
+Indiana,2010,24.7,88.5
+Indiana,2011,24.8,88.3
+Indiana,2012,25.03,88.97
+Indiana,2013,25.49,88.67
+Indiana,2014,26.26,89.41
+Indiana,2015,26.68,89.22
+Iowa,2007,27.07,92.11
+Iowa,2008,27.23,92.74
+Iowa,2009,28.01,92.43
+Iowa,2010,27.7,92.1
+Iowa,2011,28.7,92.7
+Iowa,2012,28.69,93
+Iowa,2013,28.83,92.83
+Iowa,2014,30.02,93.2
+Iowa,2015,29.09,92.78
+Kansas,2007,31.14,90.02
+Kansas,2008,32.01,90
+Kansas,2009,31.8,89.78
+Kansas,2010,32.1,89.8
+Kansas,2011,32.2,90.3
+Kansas,2012,32.32,90.17
+Kansas,2013,32.92,90.1
+Kansas,2014,33.1,90.19
+Kansas,2015,33.47,90.09
+Kentucky,2007,21.71,86.57
+Kentucky,2008,21.39,87
+Kentucky,2009,22.91,87.7
+Kentucky,2010,22.2,87.6
+Kentucky,2011,22.8,88
+Kentucky,2012,23.47,88.91
+Kentucky,2013,24.19,88.8
+Kentucky,2014,23.67,89.02
+Kentucky,2015,24.66,89.63
+Louisiana,2007,21.62,83.44
+Louisiana,2008,21.47,85.13
+Louisiana,2009,22.69,85.59
+Louisiana,2010,22.4,84.7
+Louisiana,2011,22,85.5
+Louisiana,2012,22.94,85.52
+Louisiana,2013,23.47,85.56
+Louisiana,2014,23.6,86.15
+Louisiana,2015,24.04,86.69
+Maine,2007,28.54,93.54
+Maine,2008,26.6,94.07
+Maine,2009,28.57,94.17
+Maine,2010,28.4,93.5
+Maine,2011,30,93.8
+Maine,2012,28.62,94.05
+Maine,2013,28.81,94.39
+Maine,2014,30.39,94.51
+Maine,2015,30.03,94.18
+Maryland,2007,37.41,90.3
+Maryland,2008,37.14,90.08
+Maryland,2009,37.75,89.89
+Maryland,2010,37.8,89.3
+Maryland,2011,38.6,90.5
+Maryland,2012,38.66,90.59
+Maryland,2013,39.2,90.35
+Maryland,2014,39.85,90.01
+Maryland,2015,40.41,90.64
+Massachusetts,2007,41.33,92.16
+Massachusetts,2008,41.38,92.08
+Massachusetts,2009,41.76,91.75
+Massachusetts,2010,42.4,92.1
+Massachusetts,2011,42.4,91.8
+Massachusetts,2012,42.37,92.53
+Massachusetts,2013,43.34,92.87
+Massachusetts,2014,44.3,92.21
+Massachusetts,2015,44.14,92.77
+Michigan,2007,26.74,90.23
+Michigan,2008,26.56,90.51
+Michigan,2009,26.54,90.32
+Michigan,2010,27,90.8
+Michigan,2011,27.4,90.9
+Michigan,2012,27.65,90.54
+Michigan,2013,28.44,90.8
+Michigan,2014,28.99,91.27
+Michigan,2015,29.13,91.22
+Minnesota,2007,33.59,93.44
+Minnesota,2008,34.04,93.54
+Minnesota,2009,34.05,93
+Minnesota,2010,34.4,93.1
+Minnesota,2011,34.8,93.1
+Minnesota,2012,35.55,93.28
+Minnesota,2013,35.96,93.15
+Minnesota,2014,36.43,93.56
+Minnesota,2015,36.88,93.21
+Mississippi,2007,20.16,83.1
+Mississippi,2008,20.3,84.78
+Mississippi,2009,20.81,84.85
+Mississippi,2010,20.2,84.4
+Mississippi,2011,20.8,84.2
+Mississippi,2012,21.43,86.52
+Mississippi,2013,20.98,86.2
+Mississippi,2014,21.61,86.53
+Mississippi,2015,21.18,86.89
+Missouri,2007,26.96,89.43
+Missouri,2008,27.22,88.88
+Missouri,2009,27.4,89.44
+Missouri,2010,28,89.5
+Missouri,2011,28.2,89.9
+Missouri,2012,28.54,90.16
+Missouri,2013,28.99,90.87
+Missouri,2014,29.62,90.88
+Missouri,2015,29.71,90.98
+Montana,2007,28.33,91.68
+Montana,2008,29.04,93.03
+Montana,2009,29.18,92.79
+Montana,2010,31.1,93.1
+Montana,2011,29.6,94.7
+Montana,2012,30.41,93.39
+Montana,2013,29.34,93.83
+Montana,2014,30.34,93.28
+Montana,2015,31.16,94.51
+Nebraska,2007,30.26,90.87
+Nebraska,2008,29.92,90.94
+Nebraska,2009,30.39,89.91
+Nebraska,2010,31.5,90.3
+Nebraska,2011,30.4,90.8
+Nebraska,2012,31.61,90.23
+Nebraska,2013,31.99,89.21
+Nebraska,2014,32.05,89.72
+Nebraska,2015,32.38,90.91
+Nevada,2007,22.07,82.42
+Nevada,2008,22.53,81.57
+Nevada,2009,22.2,82.31
+Nevada,2010,22.1,84.1
+Nevada,2011,22.4,82.6
+Nevada,2012,22.19,84.16
+Nevada,2013,22.56,84.29
+Nevada,2014,22.98,84.68
+Nevada,2015,23.19,85.68
+New Hampshire,2007,34.55,92.81
+New Hampshire,2008,35.87,92.95
+New Hampshire,2009,34.01,93.31
+New Hampshire,2010,34.8,93.8
+New Hampshire,2011,35.4,93
+New Hampshire,2012,36.39,93.6
+New Hampshire,2013,36.21,94.61
+New Hampshire,2014,36.34,94.16
+New Hampshire,2015,37.04,94.4
+New Jersey,2007,36.99,90.47
+New Jersey,2008,37.6,90.42
+New Jersey,2009,37.7,90.3
+New Jersey,2010,38.4,90.7
+New Jersey,2011,38.3,90.6
+New Jersey,2012,39.01,90.55
+New Jersey,2013,39.46,90.78
+New Jersey,2014,40.09,91.1
+New Jersey,2015,40.23,91.26
+New Mexico,2007,25.55,83.89
+New Mexico,2008,25.07,83.11
+New Mexico,2009,25.71,82.95
+New Mexico,2010,25.1,83.7
+New Mexico,2011,25.6,84
+New Mexico,2012,25.91,85.74
+New Mexico,2013,26.11,85.7
+New Mexico,2014,25.71,85.03
+New Mexico,2015,25.36,84.56
+New York,2007,34.39,87.85
+New York,2008,34.63,87.28
+New York,2009,35.14,87.79
+New York,2010,34.9,87.5
+New York,2011,35.4,87.8
+New York,2012,35.72,87.89
+New York,2013,36.42,88.37
+New York,2014,36.87,88.65
+New York,2015,37.26,88.78
+North Carolina,2007,27.26,85.93
+North Carolina,2008,27.81,85.99
+North Carolina,2009,28.42,86.73
+North Carolina,2010,28.1,86.9
+North Carolina,2011,28.5,86.5
+North Carolina,2012,28.88,86.61
+North Carolina,2013,30.04,87.1
+North Carolina,2014,30.25,87.67
+North Carolina,2015,30.91,87.82
+North Dakota,2007,29.92,96.09
+North Dakota,2008,30.62,95.71
+North Dakota,2009,28.95,95.63
+North Dakota,2010,31.1,95.7
+North Dakota,2011,29.5,94.8
+North Dakota,2012,31.19,95.8
+North Dakota,2013,29.83,94.89
+North Dakota,2014,29.41,94.83
+North Dakota,2015,31.74,95.64
+Ohio,2007,26.28,90.71
+Ohio,2008,26.29,90.81
+Ohio,2009,26.27,90.55
+Ohio,2010,26.7,90.9
+Ohio,2011,26.6,90.9
+Ohio,2012,27.32,91.32
+Ohio,2013,28.1,90.95
+Ohio,2014,28.68,91.16
+Ohio,2015,28.78,91.73
+Oklahoma,2007,24.23,86.69
+Oklahoma,2008,23.57,87.15
+Oklahoma,2009,24.21,86.86
+Oklahoma,2010,24.1,87.6
+Oklahoma,2011,25.1,87.5
+Oklahoma,2012,24.84,87.8
+Oklahoma,2013,24.75,87.65
+Oklahoma,2014,25,88.2
+Oklahoma,2015,25.22,88.35
+Oregon,2007,29.79,87.38
+Oregon,2008,29.58,88.34
+Oregon,2009,30.71,87.93
+Oregon,2010,29.9,88
+Oregon,2011,30.1,88.5
+Oregon,2012,30.87,89.38
+Oregon,2013,31.33,89.31
+Oregon,2014,31.57,89.41
+Oregon,2015,33.05,89.96
+Pennsylvania,2007,28.96,91.15
+Pennsylvania,2008,29.27,91.34
+Pennsylvania,2009,29.32,91.8
+Pennsylvania,2010,30,91.7
+Pennsylvania,2011,29.8,91.8
+Pennsylvania,2012,30.51,91.78
+Pennsylvania,2013,31.5,91.46
+Pennsylvania,2014,31.76,91.42
+Pennsylvania,2015,32.29,91.84
+Rhode Island,2007,32.65,87.52
+Rhode Island,2008,32.75,87.61
+Rhode Island,2009,33.29,90.08
+Rhode Island,2010,32.8,87.3
+Rhode Island,2011,33.8,88.7
+Rhode Island,2012,33.36,89.86
+Rhode Island,2013,34.49,89.02
+Rhode Island,2014,31.93,89.62
+Rhode Island,2015,34.7,90.62
+South Carolina,2007,24.61,86.18
+South Carolina,2008,24.92,86.84
+South Carolina,2009,25.55,86.65
+South Carolina,2010,25.5,87.1
+South Carolina,2011,24.7,87
+South Carolina,2012,26.06,87.85
+South Carolina,2013,27.02,87.73
+South Carolina,2014,27.02,87.69
+South Carolina,2015,27.65,88.48
+South Dakota,2007,27.31,91.48
+South Dakota,2008,27.87,93.62
+South Dakota,2009,27.15,92.52
+South Dakota,2010,28.8,92.6
+South Dakota,2011,27.9,92.4
+South Dakota,2012,27.99,92.56
+South Dakota,2013,28.26,93.34
+South Dakota,2014,29.96,92.97
+South Dakota,2015,28.87,92.07
+Tennessee,2007,23.54,86.22
+Tennessee,2008,24.46,87.47
+Tennessee,2009,24.96,87.84
+Tennessee,2010,24.8,88.2
+Tennessee,2011,25.3,88.7
+Tennessee,2012,25.94,88.89
+Tennessee,2013,26.32,88.88
+Tennessee,2014,26.78,89.5
+Tennessee,2015,27.27,89.16
+Texas,2007,26.34,80.62
+Texas,2008,26.41,80.69
+Texas,2009,26.55,80.97
+Texas,2010,26.9,82
+Texas,2011,27.4,82.6
+Texas,2012,27.46,83.11
+Texas,2013,28.42,83.81
+Texas,2014,28.57,84.09
+Texas,2015,29.12,84.63
+Utah,2007,29.65,90.18
+Utah,2008,29.84,90.33
+Utah,2009,29.32,90.3
+Utah,2010,30,90.8
+Utah,2011,30.4,89.8
+Utah,2012,30.92,90.86
+Utah,2013,31.42,91.69
+Utah,2014,31.24,91.47
+Utah,2015,32.27,91.8
+Vermont,2007,35.38,93.75
+Vermont,2008,33.77,93.46
+Vermont,2009,34.75,93.2
+Vermont,2010,34.8,94.3
+Vermont,2011,37.2,93.5
+Vermont,2012,37.41,93.6
+Vermont,2013,36.67,93.43
+Vermont,2014,35.87,94.34
+Vermont,2015,37.08,92.97
+Virginia,2007,35.86,89.83
+Virginia,2008,35.92,89.4
+Virginia,2009,36.15,89.9
+Virginia,2010,36.5,89.4
+Virginia,2011,37.2,91.1
+Virginia,2012,37.45,91.31
+Virginia,2013,38.17,91.36
+Virginia,2014,38.75,91.34
+Virginia,2015,38.96,91.76
+Washington,2007,31.67,89.13
+Washington,2008,31.81,89.46
+Washington,2009,32.17,89.18
+Washington,2010,32.2,89.4
+Washington,2011,32.6,89.9
+Washington,2012,32.27,90.08
+Washington,2013,33.49,89.78
+Washington,2014,33.84,90.6
+Washington,2015,34.8,90.82
+West Virginia,2007,18.97,87.39
+West Virginia,2008,18.75,88.26
+West Virginia,2009,19.34,88.82
+West Virginia,2010,19.3,89.4
+West Virginia,2011,20.4,89.6
+West Virginia,2012,20.4,89.59
+West Virginia,2013,20.48,89.97
+West Virginia,2014,21,90.72
+West Virginia,2015,20.95,91.09
+Wisconsin,2007,27.75,91.48
+Wisconsin,2008,27.92,91.81
+Wisconsin,2009,27.82,91.38
+Wisconsin,2010,28.3,91.7
+Wisconsin,2011,28.5,91.8
+Wisconsin,2012,29.3,92.34
+Wisconsin,2013,29.58,92.22
+Wisconsin,2014,30.29,92.67
+Wisconsin,2015,30.27,92.55
+Wyoming,2007,24.26,91.51
+Wyoming,2008,24.71,94.49
+Wyoming,2009,24.45,92.92
+Wyoming,2010,25.1,94.6
+Wyoming,2011,25.5,92.3
+Wyoming,2012,25.75,92.61
+Wyoming,2013,27.59,94.6
+Wyoming,2014,26.72,93.15
+Wyoming,2015,25.85,93.06

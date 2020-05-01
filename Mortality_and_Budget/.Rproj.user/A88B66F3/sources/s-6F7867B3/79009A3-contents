@@ -111,6 +111,7 @@ for (f in 1:length(file_list)){
   educ_data <- rbind(educ_data, temp_data)
 }
 
+educ_data <- rbind(educ_data, education_0715)
 
 
 rm(file_list, temp_data, f)

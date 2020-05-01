@@ -1,8 +1,11 @@
 ########## Econ382-10, Final Project, Loubens Louis ##########
 
+
+
 rm(list = ls()) # clear console
 
-setwd("~/GitHub/Data_Analysis/Mortality_and_Budget") # setwd(project_folder)
+setwd("~/GitHub/Data_Analysis/Mortality_and_Budget") # setwd()
+
 
 
 ########## Cleansing of mortality_data.csv ##########
@@ -118,6 +121,7 @@ educ_data <- rbind(educ_data, education_0715)
 colnames(educ_data) <- c('state', 'year', 'phs', 'pcoll')
 
 rm(file_list, temp_data, f)
+
 
 
 ########## Cleansing of expenditure datasets ##########

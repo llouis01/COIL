@@ -18,6 +18,8 @@ mort_data = mort_data[(mort_data$year >= 1993
                                  &
                               mort_data$year <= 2015),]
 
+unique(mort_data$age2)
+
 
 # Q2
 

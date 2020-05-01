@@ -1,18 +1,18 @@
 ########## Econ382-10, Final Project, Loubens Louis ##########
 
-
-
 rm(list = ls()) # clear console
 
 setwd("~/GitHub/Data_Analysis/Mortality_and_Budget") # setwd()
 
+install.packages('tidyverse') # if necessary
 
+require("tidyverse")
 
 ########## Cleansing of mortality_data.csv ##########
 
 # Q1
 
-mort_data <- read.csv("Data_sets/mortality_data.csv")
+mort_data <- read_csv("Data_sets/mortality_data.csv", col_names = TRUE)
 
 mort_data = mort_data[(mort_data$year >= 1993
                                  &
@@ -104,9 +104,6 @@ setwd("~/GitHub/Data_Analysis/Mortality_and_Budget/Data_sets/education")
 file_list = list.files(path = "~/GitHub/Data_Analysis/Mortality_and_Budget/Data_sets/education")
 
 educ_data = data.frame()
-
-install.packages('tidyverse')
-require("tidyverse")
 
 for (f in 1:length(file_list)){
   temp_data <- read_csv(file_list[f], col_names = TRUE)

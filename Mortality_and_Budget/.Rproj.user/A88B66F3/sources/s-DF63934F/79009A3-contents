@@ -111,7 +111,46 @@ for (f in 1:length(file_list)){
   educ_data <- rbind(educ_data, temp_data)
 }
 
+education_0715 <- read_csv("~/GitHub/Data_Analysis/Mortality_and_Budget/Data_sets/education_0715.csv")
+
 educ_data <- rbind(educ_data, education_0715)
 
+colnames(educ_data) <- c('state', 'year', 'phs', 'pcoll')
 
 rm(file_list, temp_data, f)
+
+
+########## Cleansing of expenditure datasets ##########
+
+# Q10
+
+setwd("~/GitHub/Data_Analysis/Mortality_and_Budget/Data_sets/expenditure")
+
+file_list <- list.files(path = "~/GitHub/Data_Analysis/Mortality_and_Budget/Data_sets/expenditure")
+
+expnd_data <- data.frame()
+
+for (f in 1:length(file_list)){
+  temp_data <- read_csv(file_list[f], col_names = T)
+  colnames(temp_data) <- c('state', 'year', 'tot_revenue', 'taxes', 'tot_expnd',
+                           'education', 'public_welfare', 'hospital', 'health')
+  expnd_data <- rbind(expnd_data, temp_data)
+}
+
+rm(temp_data, file_list, f)
+
+
+
+########## Merging data frames for regression ##########
+
+# Q11 One-to-One merge
+
+data = merge(inc_data, educ_data, by = c('state', 'year'))
+
+# Q12 One-to-One merge
+
+data = merge(data, expnd_data, by = c('state', 'year'))
+
+# Q13 Many-to-One merge
+
+data <- merge(mort_data, data, by = c('state', 'year'))

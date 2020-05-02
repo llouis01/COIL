@@ -18,8 +18,6 @@ mort_data = mort_data[(mort_data$year >= 1993
                                  &
                               mort_data$year <= 2015),]
 
-unique(mort_data$age2)
-
 
 # Q2
 
@@ -45,8 +43,6 @@ mort_data$age2[mort_data$age == "110+"] = "110"
 
 mort_data$age2 = as.numeric(mort_data$age2)
 
-mort_data
-
 
 # Q4
 
@@ -54,10 +50,6 @@ mort_data$age_group <- cut(mort_data$age2,
                            breaks = c(0, 18, 64, 110),
                            labels = c("<18", "18-64", ">64"),
                            include.lowest = TRUE)
-
-mort_data$age2 = as.numeric(mort_data$age2)
-
-mort_data
 
 
 # Q5

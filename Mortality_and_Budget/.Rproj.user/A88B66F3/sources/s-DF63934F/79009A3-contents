@@ -183,7 +183,7 @@ stargazer::stargazer(data,
 # Q18
 
 # created a subset for >= 65 years-old
-reg_65 <- data[data$age_group=='>64', ] 
+reg_65 <- data[data$age_group=='>64', ]
 
 reg1 <- lm(mort_data ~ health + hospital +
            log(pinc) + phs + pcoll,

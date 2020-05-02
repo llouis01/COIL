@@ -5,13 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3067587093",
+    "hash" : "0",
     "id" : "3F094BA2",
     "lastKnownWriteTime" : 1588379264,
     "last_content_update" : 1588379264,
     "path" : "C:/Users/Loube/Desktop/Education/OneDrive - CUNY/QC/Spring20/ECON382/R Programming/r_assignment.R",
     "project_path" : null,
     "properties" : {
+        "cursorPosition" : "0,1",
+        "scrollLine" : "0"
     },
     "read_only" : false,
     "read_only_alternatives" : [

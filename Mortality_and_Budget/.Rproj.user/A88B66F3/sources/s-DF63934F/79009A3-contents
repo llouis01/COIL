@@ -182,7 +182,8 @@ stargazer::stargazer(data,
 
 # Q18
 
-reg_65 <- data[data$age_group=='>64', ]
+# created a subset for >= 65 years-old
+reg_65 <- data[data$age_group=='>64', ] 
 
 reg1 <- lm(mort_data ~ health + hospital +
            log(pinc) + phs + pcoll,
@@ -190,18 +191,19 @@ reg1 <- lm(mort_data ~ health + hospital +
 
 # Q19
 
-reg_65_2 <- data[data$age_group=='>64', ]
-
 reg2 <- lm(mort_data ~ health + hospital +
            log(pinc) + phs + pcoll + state,
-           data = reg_65_2)
-
-# rm(reg2)
+           data = reg_65)
 
 # Q20
 
-reg_65_3 <- data[data$age_group=='>64', ]
-
 reg3 <- lm(mort_data ~ health + hospital +
            log(pinc) + phs + pcoll + state + year,
-           data = reg_65_3)
+           data = reg_65)
+
+# Q21
+
+stargazer::stargazer(reg1, reg2, reg3,
+                     type = 'html',
+                     out = 'Regressions2.doc',
+                     out.header = T)

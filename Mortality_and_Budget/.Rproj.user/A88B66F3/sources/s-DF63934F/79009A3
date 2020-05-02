@@ -2,18 +2,18 @@
     "collab_server" : "",
     "contents" : "",
     "created" : 1588360900932.000,
-    "dirty" : false,
+    "dirty" : true,
     "encoding" : "UTF-8",
     "folds" : "",
     "hash" : "0",
     "id" : "79009A3",
     "lastKnownWriteTime" : 1588383940,
-    "last_content_update" : 1588383940979,
+    "last_content_update" : 1588384726949,
     "path" : "~/GitHub/Data_Analysis/Mortality_and_Budget/Mort_Data_Analysis.r",
     "project_path" : "Mort_Data_Analysis.r",
     "properties" : {
-        "cursorPosition" : "206,26",
-        "scrollLine" : "197"
+        "cursorPosition" : "209,0",
+        "scrollLine" : "199"
     },
     "read_only" : false,
     "read_only_alternatives" : [

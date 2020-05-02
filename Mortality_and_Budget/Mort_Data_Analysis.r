@@ -111,7 +111,7 @@ educ_data <- rbind(educ_data, education_0715)
 
 colnames(educ_data) <- c('state', 'year', 'phs', 'pcoll')
 
-rm(file_list, temp_data, f)
+rm(file_list, temp_data, f, education_0715)
 
 
 

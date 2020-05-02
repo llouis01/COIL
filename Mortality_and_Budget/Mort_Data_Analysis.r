@@ -179,6 +179,29 @@ stargazer::stargazer(data,
                      out = 'Descriptives.doc',
                      title = 'Statistical Summary of Data')
 
-reg1 <- lm(mort_data ~ age_group'>64' + health + hospital +
+
+# Q18
+
+reg_65 <- data[data$age_group=='>64', ]
+
+reg1 <- lm(mort_data ~ health + hospital +
            log(pinc) + phs + pcoll,
-           data = data)
+           data = reg_65)
+
+# Q19
+
+reg_65_2 <- data[data$age_group=='>64', ]
+
+reg2 <- lm(mort_data ~ health + hospital +
+           log(pinc) + phs + pcoll + state,
+           data = reg_65_2)
+
+# rm(reg2)
+
+# Q20
+
+reg_65_3 <- data[data$age_group=='>64', ]
+
+reg3 <- lm(mort_data ~ health + hospital +
+           log(pinc) + phs + pcoll + state + year,
+           data = reg_65_3)

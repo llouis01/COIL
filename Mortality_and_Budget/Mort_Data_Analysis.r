@@ -127,8 +127,10 @@ expnd_data <- data.frame()
 
 for (f in 1:length(file_list)){
   temp_data <- read_csv(file_list[f], col_names = T)
-  colnames(temp_data) <- c('state', 'year', 'tot_revenue', 'taxes', 'tot_expnd',
-                           'education', 'public_welfare', 'hospital', 'health')
+  colnames(temp_data) <- c('state', 'year', 'tot_revenue',
+                           'taxes','tot_expnd',
+                           'education', 'public_welfare',
+                           'hospital', 'health')
   expnd_data <- rbind(expnd_data, temp_data)
 }
 
@@ -149,3 +151,21 @@ data = merge(data, expnd_data, by = c('state', 'year'))
 # Q13 Many-to-One merge
 
 data <- merge(mort_data, data, by = c('state', 'year'))
+
+# Q14
+
+rm(mort_data, educ_data, expnd_data)
+
+# Q15
+
+data[ , c('pinc', 'tot_revenue', 'taxes', 'tot_expnd',
+          'education', 'public_welfare', 'hospital',
+          'health')] = data[ , c('pinc', 'tot_revenue',
+                                 'taxes', 'tot_expnd',
+                                 'education',
+                                 'public_welfare','hospital',
+                                 'health')]/10000
+
+# Q16
+
+data[, c('phs', 'pcoll')] = data[ , c('phs', 'pcoll')]/100

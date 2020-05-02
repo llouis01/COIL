@@ -151,3 +151,29 @@ data = merge(data, expnd_data, by = c('state', 'year'))
 # Q13 Many-to-One merge
 
 data <- merge(mort_data, data, by = c('state', 'year'))
+
+# Q14
+
+rm(mort_data, educ_data, expnd_data)
+
+# Q15
+
+data[ , c('pinc', 'tot_revenue', 'taxes', 'tot_expnd',
+          'education', 'public_welfare', 'hospital',
+          'health')] = data[ , c('pinc', 'tot_revenue',
+                                 'taxes', 'tot_expnd',
+                                 'education',
+                                 'public_welfare','hospital',
+                                 'health')]/10000
+
+# Q16
+
+data[, c('phs', 'pcoll')] = data[ , c('phs', 'pcoll')]/100
+
+# Q17
+
+setwd("~/GitHub/Data_Analysis/Mortality_and_Budget")
+
+stargazer::stargazer(data, type = "html",
+                     out = 'Descriptives.doc',
+                     title = 'Statistical Summary of Data')

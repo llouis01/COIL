@@ -72,7 +72,7 @@ mort_data <- mort_data[order(mort_data$state, mort_data$year), ]
 
 # Q7
 
-inc_data <- read_csv("Data_sets/income_data.csv")
+inc_data <- read.csv("Data_sets/income_data.csv")
 
 inc_data = reshape(inc_data,
                     varying = names(inc_data)[2:24],

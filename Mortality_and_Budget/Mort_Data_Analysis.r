@@ -169,3 +169,16 @@ data[ , c('pinc', 'tot_revenue', 'taxes', 'tot_expnd',
 # Q16
 
 data[, c('phs', 'pcoll')] = data[ , c('phs', 'pcoll')]/100
+
+# Q17
+
+setwd("~/GitHub/Data_Analysis/Mortality_and_Budget")
+
+stargazer::stargazer(data,
+                     type = "html",
+                     out = 'Descriptives.doc',
+                     title = 'Statistical Summary of Data')
+
+reg1 <- lm(mort_data ~ age_group'>64' + health + hospital +
+           log(pinc) + phs + pcoll,
+           data = data)

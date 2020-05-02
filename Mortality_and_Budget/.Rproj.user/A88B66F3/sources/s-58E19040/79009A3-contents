@@ -207,3 +207,14 @@ stargazer::stargazer(reg1, reg2, reg3,
                      type = 'html',
                      out = 'Regressions2.doc',
                      out.header = T)
+
+## Extra stuff I learned on LinkedIn ##
+
+summary(reg1)
+summary(reg2)
+summary(reg3$coefficients)
+hist(reg1$residuals,
+     main = "Histogram of Reg1 Residuals",
+     xlab = "Residuals",
+     col = "turquoise")
+

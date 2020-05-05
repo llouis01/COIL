@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1588682283235.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1400090092",
+    "id" : "B6BB266E",
+    "lastKnownWriteTime" : 1588683430,
+    "last_content_update" : 1588683431015,
+    "path" : "~/GitHub/Data_Analysis/R_Lab/R_coding/graphix.R",
+    "project_path" : "graphix.R",
+    "properties" : {
+        "cursorPosition" : "6,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -11,3 +11,6 @@ of Economic Analysis and the US Mortality Database and chosen by the Econometric
 
 ## R Lab for Econometrics ##
 The R_lab folder contains projects I worked on in class. These projects include correlation, regression and other data analytics tools.
+
+## Working on a spreadsheet using Pivot Table and Graphs ##
+Working on an Excel spreadsheet for Data Analysis

@@ -20,3 +20,5 @@ mtext(paste("Side", 1:4),
       side = 1:4,
       line = 3.5,
       font = 2)
+
+rm(list=ls())

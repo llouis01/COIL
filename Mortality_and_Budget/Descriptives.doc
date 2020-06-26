@@ -1,23 +1,16 @@
 
 <table style="text-align:center"><caption><strong>Statistical Summary of Data</strong></caption>
 <tr><td colspan="8" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Statistic</td><td>N</td><td>Mean</td><td>St. Dev.</td><td>Min</td><td>Pctl(25)</td><td>Pctl(75)</td><td>Max</td></tr>
-<tr><td colspan="8" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">year</td><td>3,453</td><td>2,003.997</td><td>6.632</td><td>1,993</td><td>1,998</td><td>2,010</td><td>2,015</td></tr>
-<tr><td style="text-align:left">mort_data</td><td>3,453</td><td>0.846</td><td>1.168</td><td>0.005</td><td>0.010</td><td>2.424</td><td>2.937</td></tr>
-<tr><td style="text-align:left">prob_death</td><td>3,453</td><td>1.878</td><td>2.527</td><td>0.007</td><td>0.015</td><td>5.346</td><td>5.865</td></tr>
-<tr><td style="text-align:left">ave_length_surv</td><td>3,453</td><td>18.439</td><td>6.137</td><td>7.780</td><td>10.070</td><td>23.410</td><td>24.750</td></tr>
-<tr><td style="text-align:left">num_of_surv</td><td>3,453</td><td>566,380.000</td><td>214,051.900</td><td>284,930</td><td>367,420</td><td>849,948</td><td>870,835</td></tr>
-<tr><td style="text-align:left">num_of_deaths</td><td>3,453</td><td>33,333.320</td><td>35,570.580</td><td>693</td><td>1,527</td><td>80,883</td><td>88,087</td></tr>
-<tr><td style="text-align:left">num_years_lived</td><td>3,453</td><td>2,582,504.000</td><td>1,189,765.000</td><td>1,233,339</td><td>1,624,067</td><td>4,208,141</td><td>4,326,815</td></tr>
-<tr><td style="text-align:left">num_years_left</td><td>3,453</td><td>24,802,676.000</td><td>14,573,238.000</td><td>3,256,397</td><td>4,620,880</td><td>35,688,100</td><td>37,974,876</td></tr>
-<tr><td style="text-align:left">life_expec</td><td>3,453</td><td>263.632</td><td>135.315</td><td>64.400</td><td>75.220</td><td>362.690</td><td>391.350</td></tr>
-<tr><td style="text-align:left">pinc</td><td>3,453</td><td>3.370</td><td>0.961</td><td>1.567</td><td>2.597</td><td>4.005</td><td>6.829</td></tr>
-<tr><td style="text-align:left">phs</td><td>3,453</td><td>0.865</td><td>0.048</td><td>0.685</td><td>0.835</td><td>0.900</td><td>0.961</td></tr>
-<tr><td style="text-align:left">pcoll</td><td>3,453</td><td>0.265</td><td>0.056</td><td>0.114</td><td>0.224</td><td>0.301</td><td>0.443</td></tr>
-<tr><td style="text-align:left">tot_revenue</td><td>3,453</td><td>3,006.471</td><td>3,968.579</td><td>194.216</td><td>851.844</td><td>3,488.338</td><td>35,338.590</td></tr>
-<tr><td style="text-align:left">taxes</td><td>3,453</td><td>1,248.786</td><td>1,647.671</td><td>58.907</td><td>357.807</td><td>1,534.733</td><td>15,123.420</td></tr>
-<tr><td style="text-align:left">tot_expnd</td><td>3,453</td><td>2,838.827</td><td>3,723.824</td><td>168.643</td><td>781.648</td><td>3,271.044</td><td>33,021.080</td></tr>
-<tr><td style="text-align:left">education</td><td>3,453</td><td>730.932</td><td>992.600</td><td>20.139</td><td>177.918</td><td>893.811</td><td>9,027.652</td></tr>
-<tr><td style="text-align:left">public_welfare</td><td>3,453</td><td>663.371</td><td>950.275</td><td>20.840</td><td>161.470</td><td>788.851</td><td>10,903.170</td></tr>
-<tr><td style="text-align:left">hospital</td><td>3,453</td><td>91.771</td><td>129.674</td><td>0.000</td><td>10.427</td><td>118.085</td><td>1,146.805</td></tr>
-<tr><td style="text-align:left">health</td><td>3,453</td><td>88.071</td><td>136.773</td><td>2.445</td><td>22.726</td><td>98.185</td><td>1,194.319</td></tr>
+<tr><td colspan="8" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">year</td><td>3,450</td><td>2,004.000</td><td>6.634</td><td>1,993</td><td>1,998</td><td>2,010</td><td>2,015</td></tr>
+<tr><td style="text-align:left">mort_data</td><td>3,450</td><td>0.846</td><td>1.168</td><td>0.005</td><td>0.010</td><td>2.424</td><td>2.937</td></tr>
+<tr><td style="text-align:left">prob_death</td><td>3,450</td><td>1.878</td><td>2.527</td><td>0.007</td><td>0.015</td><td>5.346</td><td>5.865</td></tr>
+<tr><td style="text-align:left">ave_length_surv</td><td>3,450</td><td>18.439</td><td>6.137</td><td>7.780</td><td>10.070</td><td>23.410</td><td>24.750</td></tr>
+<tr><td style="text-align:left">num_of_surv</td><td>3,450</td><td>566,376.400</td><td>214,051.300</td><td>284,930</td><td>367,432.5</td><td>849,940.2</td><td>870,835</td></tr>
+<tr><td style="text-align:left">num_of_deaths</td><td>3,450</td><td>33,333.320</td><td>35,569.750</td><td>693</td><td>1,527</td><td>80,883</td><td>88,087</td></tr>
+<tr><td style="text-align:left">num_years_lived</td><td>3,450</td><td>2,582,486.000</td><td>1,189,758.000</td><td>1,233,339</td><td>1,624,137.0</td><td>4,208,052.0</td><td>4,326,815</td></tr>
+<tr><td style="text-align:left">num_years_left</td><td>3,450</td><td>24,802,456.000</td><td>14,573,129.000</td><td>3,256,397</td><td>4,620,922.0</td><td>35,687,980.0</td><td>37,974,876</td></tr>
+<tr><td style="text-align:left">life_expec</td><td>3,450</td><td>263.631</td><td>135.314</td><td>64.400</td><td>75.220</td><td>362.705</td><td>391.350</td></tr>
+<tr><td style="text-align:left">pinc</td><td>3,450</td><td>33,696.900</td><td>9,614.604</td><td>15,667</td><td>25,967</td><td>40,047</td><td>68,288</td></tr>
+<tr><td style="text-align:left">phs</td><td>3,450</td><td>0.865</td><td>0.048</td><td>0.685</td><td>0.836</td><td>0.900</td><td>0.961</td></tr>
+<tr><td style="text-align:left">pcoll</td><td>3,450</td><td>0.265</td><td>0.056</td><td>0.114</td><td>0.224</td><td>0.301</td><td>0.443</td></tr>
 <tr><td colspan="8" style="border-bottom: 1px solid black"></td></tr></table>

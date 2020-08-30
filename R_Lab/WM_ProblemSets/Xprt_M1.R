@@ -56,3 +56,19 @@ barplot(Branch, main = "Branch Frequency Bar Chart")
 # Bar Chart for Customer
 Customer <- table(w_data$Customer)
 barplot(Customer, main = "Customer Frequency Bar Chart")
+
+# Pie chart for AcctType
+AcctType <- table(w_data$AcctType)
+pie(AcctType, labels = names(AcctType), main = "Pie Chart for Account Type")
+
+# Pie Chart for OpenedBy
+OpenedBy <- table(w_data$OpenedBy)
+pie(OpenedBy, labels = names(OpenedBy), main = "Pie Chart for Opened By")
+
+# Pie Chart for Branch
+Branch <- table(w_data$Branch)
+pie(Branch, labels = names(Branch), main = "Pie Chart for Branch")
+
+# Pie Chart for Customer
+Customer <- table(w_data$Customer)
+pie(Customer, labels = names(Customer), main = "Pie Chart for Customer")

@@ -56,3 +56,37 @@ p_65plus_same
 
 
 # 2 Students
+
+library("GraphViz/DiagrammeR")
+
+studata <- read.xlsx("C:\\Users\\Loube\\OneDrive - William & Mary\\Bus_Stats_BUAD502A\\Assignments\\buad502a-m3-expert-data3-students.xls", 1)
+
+students <- Node$new("Students")
+  stem <- students$AddChild("STEM")
+    stem_uses <- stem$AddChild("Uses marijuana")
+    stem_not_use <- stem$AddChild("does not use marijuana")
+  sbs <- students$AddChild("Social/Behavioral Sciences")
+    sbs_uses <- sbs$AddChild("Uses marijuana")
+    sbs_not_use <- sbs$AddChild("does not use marijuana")
+  arts_hu <- students$AddChild("Arts and Humanities")
+    hu_uses <- arts_hu$AddChild("Uses marijuana")
+    hu_not_use <- arts_hu$AddChild("does not use marijuana")
+  Business <- students$AddChild("Business")
+    bus_use <- Business$AddChild("Uses marijuana")
+    bus_not_use <- Business$AddChild("does not use marijuana")
+
+stem$p <- .19
+sbs$p <- .32
+arts_hu$p <- .28
+Business$p <- .21
+
+stem_uses$p <- .15
+stem_not_use$p <- .75
+sbs_uses$p <- .40
+sbs_not_use$p <- .60
+hu_uses$p <- .65
+hu_not_use$p <- .35
+bus_use$p <- .32
+bus_not_use$p <- .68
+
+print(students, "p")

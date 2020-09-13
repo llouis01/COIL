@@ -1,0 +1,32 @@
+{
+    "id": "F667D40A",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1600024150804.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "expression": "studata",
+        "caption": "studata",
+        "totalObservations": "2",
+        "displayedObservations": "2",
+        "variables": "5",
+        "cacheKey": "34A50549",
+        "object": "studata",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=studata&cache_key=34A50549&max_cols=50",
+        "preview": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1307750514825410612,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1600024150804,
+    "read_only": false,
+    "read_only_alternatives": []
+}

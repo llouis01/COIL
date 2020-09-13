@@ -55,8 +55,10 @@ p_65plus_same
 " I deduce that age is independent of spending pattern because there are a lot of reasons that can make someone spend more or less on beer and pizza. There seems to be no way of clearly saying or arguing against the older a person is, the less they spend on pizza and beer. For that reason, I think the responses are independent of ages."
 
 
-# 2 Students
 
+# 2 Students, majors and marijuana use
+
+# 2a - Make a probability tree
 library(DiagrammeR)
 
 studata <- read.xlsx("C:\\Users\\Loube\\OneDrive - William & Mary\\Bus_Stats_BUAD502A\\Assignments\\buad502a-m3-expert-data3-students.xls", 1)
@@ -81,7 +83,7 @@ arts_hu$p <- .28
 Business$p <- .21
 
 stem_uses$p <- .15
-stem_not_use$p <- .75
+stem_not_use$p <- .85
 sbs_uses$p <- .40
 sbs_not_use$p <- .60
 hu_uses$p <- .65
@@ -90,4 +92,49 @@ bus_use$p <- .32
 bus_not_use$p <- .68
 
 print(students, "p")
+
+# styling the tree
+GetNodeLabel <- function(node) paste0('Prob\n', node$p)
+GetEdgeLabel <- function(node) {
+      label = node$name
+  return (label)
+}
+SetEdgeStyle(students, fontname = 'helvetica', label = GetEdgeLabel)
+SetNodeStyle(students, fontname = 'helvetica', label = GetNodeLabel, shape = 'Diamond', color = 'red')
+SetGraphStyle(students, rankdir = "LR")
 plot(students)
+
+# 2b - percentage who uses marijuana
+pct_uses <- sum((studata$Science..Technology..Engineering.and.Math[1] * studata$Science..Technology..Engineering.and.Math[2]), (studata$Social.Behavioral.Sciences[1] * studata$Social.Behavioral.Sciences[2]), (studata$Arts.and.humanities[1] * studata$Arts.and.humanities[2]), (studata$Business[1] * studata$Business[2]))
+pct_uses
+
+#2c - pctage abstainers
+pct_complement = 1 - pct_uses
+pct_complement
+
+# 2d - p(arts&Hu | uses )
+(pct_uses * .28) / pct_uses
+
+# 2e - p(bus | uses)
+(pct_uses * .21) / pct_uses
+
+# 2f - p(stem | uses)
+(pct_uses * .19) / pct_uses
+
+# 2g - p(arts&Hu | not_uses )
+(.28 * pct_complement) / pct_complement
+
+# 2h - p(sbs | not_use)
+(.32 * pct_complement) / pct_complement
+
+# 2i - p(stem | abstain)
+(pct_complement * .19) / pct_complement
+
+# 2j - p(stem | abst)
+# similar to 2i
+
+
+
+# Defects
+
+# 3

@@ -176,3 +176,23 @@ prob100_3 <- sum(monitor_100 == 3) / 100
 prob100_4p <- sum(monitor_100 == 4, monitor_100 == 5, monitor_100 == 6, monitor_100 == 7) / 100
 probs100 <- c(prob100_0, prob100_1, prob100_2, prob100_3, prob100_4p)
 cbind(sample_space, probs100)
+
+e_dfct100 <- sum(sample_space * probs100)
+e_dfct100
+
+# 3e - std dev in next 100
+dev100 <- (sample_space - e_dfct100)^2 * probs100
+std_dev100 <- sqrt(sum(dev100))
+std_dev100
+
+# 3f - how many dfctive monitors from nxt 100
+
+100 * prob100_4p
+
+# 3g - warranty costs
+# if we are considering the next 100 computers, 53 computers will be defective, the company will find 50% of the defective ones (roughly 26 or 27 out of thee 53). 74.49 times 26 computers equal 1936.74 dollars to be spent on warranty costs.
+
+
+# 4 Smartphone
+
+# 4a -

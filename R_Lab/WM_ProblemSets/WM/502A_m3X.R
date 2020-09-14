@@ -204,3 +204,15 @@ ovrl_dfc <- sum((.45 * .01), (.35 * .02), (.20 * .01))
 (ovrl_dfc * .20) / ovrl_dfc
 
 # 4c - conditional non-dfc
+ovrl_non_dfc <- 1 - ovrl_dfc
+(ovrl_non_dfc * .45) / ovrl_non_dfc
+(ovrl_non_dfc * .35) / ovrl_non_dfc
+(ovrl_non_dfc * .20) / ovrl_non_dfc
+
+
+# 5 flights
+
+# 5a - prob that 15 are on time
+dbinom(15, 25, .6)
+
+# 5b - at most 5

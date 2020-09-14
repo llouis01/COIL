@@ -212,4 +212,7 @@ ovrl_non_dfc <- 1 - ovrl_dfc
 
 # 5 flights
 
-# 5a - 
+# 5a - prob that 15 are on time
+dbinom(15, 25, .6)
+
+# 5b - at most 5

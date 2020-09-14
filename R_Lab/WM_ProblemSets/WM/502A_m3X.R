@@ -137,4 +137,42 @@ pct_complement
 
 # Defects
 
-# 3
+dfcts <- read.xlsx("C:\\Users\\Loube\\OneDrive - William & Mary\\Bus_Stats_BUAD502A\\Assignments\\buad502a-m3-expert-data1-defects.xls", 1)
+dfcts
+str(dfcts)
+head(dfcts)
+
+# 3a - calculate probability of defective monitor
+sample_space <- 0:4
+total_monitors <- nrow(dfcts)
+total_monitors
+
+prob0 <- sum(dfcts$X..Defects == 0) / total_monitors
+prob1 <- sum(dfcts$X..Defects == 1) / total_monitors
+prob2 <- sum(dfcts$X..Defects == 2) / total_monitors
+prob3 <- sum(dfcts$X..Defects == 3) / total_monitors
+prob4_plus <- sum(dfcts$X..Defects == 4, dfcts$X..Defects == 5, dfcts$X..Defects == 6, dfcts$X..Defects == 7) / total_monitors
+probs <- c(prob0, prob1, prob2, prob3, prob4) # all adds to 1
+cbind(sample_space, probs)
+
+# 3b - expected defct/monitor
+e_dfct <- sum(sample_space * probs)
+e_dfct
+
+# 3c - std dev fpr dfcts
+dev <- (sample_space - e_dfct)^2 * probs
+std_dev <- sqrt(sum(dev))
+std_dev
+
+# 3d - dfcts in nxt 100 monitors
+monitor_100 <- dfcts$X..Defects[c(1:100)]
+monitor_100
+length(monitor_100)
+
+prob100_0 <- sum(monitor_100 == 0) / 100
+prob100_1 <- sum(monitor_100 == 1) / 100
+prob100_2 <- sum(monitor_100 == 2) / 100
+prob100_3 <- sum(monitor_100 == 3) / 100
+prob100_4p <- sum(monitor_100 == 4, monitor_100 == 5, monitor_100 == 6, monitor_100 == 7) / 100
+probs100 <- c(prob100_0, prob100_1, prob100_2, prob100_3, prob100_4p)
+cbind(sample_space, probs100)

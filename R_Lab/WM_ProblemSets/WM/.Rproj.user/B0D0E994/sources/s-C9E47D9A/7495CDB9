@@ -1,0 +1,32 @@
+{
+    "id": "7495CDB9",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1600036020124.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "expression": "dfcts",
+        "caption": "dfcts",
+        "totalObservations": "500",
+        "displayedObservations": "500",
+        "variables": "2",
+        "cacheKey": "8EA03902",
+        "object": "dfcts",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=dfcts&cache_key=8EA03902&max_cols=50",
+        "preview": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 2314861393404246562,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1600036020124,
+    "read_only": false,
+    "read_only_alternatives": []
+}

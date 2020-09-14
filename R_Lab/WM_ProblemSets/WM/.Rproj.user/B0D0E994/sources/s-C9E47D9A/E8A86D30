@@ -5,20 +5,21 @@
     "type": "r_source",
     "hash": "0",
     "contents": "",
-    "dirty": false,
+    "dirty": true,
     "created": 1599965696562.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
-        "cursorPosition": "197,6",
-        "scrollLine": "173"
+        "cursorPosition": "214,7",
+        "scrollLine": "189",
+        "ignored_words": "Smartphone\n"
     },
     "folds": "",
-    "lastKnownWriteTime": 1600045034,
+    "lastKnownWriteTime": 1600045811,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1600045034649,
+    "last_content_update": 1600045974515,
     "read_only": false,
     "read_only_alternatives": []
 }

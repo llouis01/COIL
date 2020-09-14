@@ -186,7 +186,6 @@ std_dev100 <- sqrt(sum(dev100))
 std_dev100
 
 # 3f - how many dfctive monitors from nxt 100
-
 100 * prob100_4p
 
 # 3g - warranty costs
@@ -195,4 +194,13 @@ std_dev100
 
 # 4 Smartphone
 
-# 4a -
+# 4a - percentage of overall defctve
+ovrl_dfc <- sum((.45 * .01), (.35 * .02), (.20 * .01))
+# 1.35 %
+
+# 4b - conditional dfctive
+(ovrl_dfc * .45) / ovrl_dfc
+(ovrl_dfc * .35) / ovrl_dfc
+(ovrl_dfc * .20) / ovrl_dfc
+
+# 4c - conditional non-dfc

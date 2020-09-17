@@ -14,7 +14,10 @@ waking.hours = c(13.9, 11.5, 5.9, 16.0)
 
 creature.data = data.frame(row.names = creatures,
                            friendly, diet, waking.hours)
-# will return
+
+ordered_creatures = creature.data[order(row.names(creature.data)) , ]
+
+ordered_creatures
 
 # replace -1's from dataframe with 'NA'
 

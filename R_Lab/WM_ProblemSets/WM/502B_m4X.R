@@ -1,4 +1,7 @@
 ### 502B
 
+# create a list and extract value out of it
 x <- list('gnu', c(3:7), months = month.abb)
-x[[3]][4]
+x
+x$months[4]
+

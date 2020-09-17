@@ -15,3 +15,13 @@ waking.hours = c(13.9, 11.5, 5.9, 16.0)
 creature.data = data.frame(row.names = creatures,
                            friendly, diet, waking.hours)
 # will return
+
+# replace -1's from dataframe with 'NA'
+
+z = c(-1:2)
+y = c(2:5)
+p = c(2:-1)
+a = data.frame(z, y, p)
+a
+a_new = replace(a, a<0, 'NA')
+a_new

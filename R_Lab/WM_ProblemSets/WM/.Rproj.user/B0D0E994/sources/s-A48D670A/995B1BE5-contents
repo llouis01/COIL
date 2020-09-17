@@ -1,3 +1,0 @@
-#### September 20th
-x = c(360, 348, 12)
-qqnorm(x)

@@ -4,8 +4,9 @@
 
 # 1 what's the score to allow only best 35% to pass?
 
-qnorm(.65, 435, 72) # using qnorm up to 65%
+qnorm(.65, 435, 72) # using qnorm with 65% as the bounding # value
 # 462.7431
+
 # 1 Real Estate exam score
 # using pnorm() with uppr and lwr bound, mean and sd,
 # we can find the percentile of the scores

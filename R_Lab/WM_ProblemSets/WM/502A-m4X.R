@@ -19,6 +19,8 @@ plot(x, y,
      xlab = "Score",
      ylab = "Frequency"
      )
+abline(v = 435 + seq(-3,3)*72, col = "black",lty = 2)
+text(435 + seq(-3,3)*72,max(y)/2,c(paste0(-(3:1),"sd"),"mean",paste0(1:3,"sd")))
 
 
 # using pnorm() with uppr and lwr bound, mean and sd,

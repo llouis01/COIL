@@ -3,7 +3,7 @@
     "path": "~/GitHub/Data_Analysis/R_Lab/WM_ProblemSets/WM/502A-m4X.R",
     "project_path": "502A-m4X.R",
     "type": "r_source",
-    "hash": "0",
+    "hash": "1592750743",
     "contents": "",
     "dirty": false,
     "created": 1600385052002.0,
@@ -11,8 +11,8 @@
     "relative_order": 1,
     "properties": {
         "tempName": "Untitled1",
-        "cursorPosition": "21,0",
-        "scrollLine": "0"
+        "cursorPosition": "38,10",
+        "scrollLine": "11"
     },
     "folds": "",
     "lastKnownWriteTime": 1600551559,

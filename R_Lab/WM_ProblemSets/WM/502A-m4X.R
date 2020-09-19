@@ -36,4 +36,9 @@ height <- hist(data$HEIGHT,
                main = "Histogram of Height",
                xlab = "Height in Inches",
                ylab = "Occurences in Data Set",
+               col = "purple",
+               border = 'blue',
                las = 1)
+
+
+#

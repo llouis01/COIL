@@ -3,10 +3,24 @@
 
 
 # 1 what's the score to allow only best 35% to pass?
-
-qnorm(.65, 435, 72) # using qnorm up to 65%
-# 462.7431
 # 1 Real Estate exam score
+
+qnorm(.65, 435, 72) # using qnorm with 65% as the bounding # value
+# 462.7431
+
+# draw the curve
+x = seq(0, 750, length = 1000)
+y <- dnorm(x, mean = 435, sd = 72)
+plot(x, y,
+     type = 'p',
+     lwd = 1,
+     col = 'red',
+     main = "Standard Normal Distribution with Mean 435 and SD 72",
+     xlab = "Score",
+     ylab = "Frequency"
+     )
+
+
 # using pnorm() with uppr and lwr bound, mean and sd,
 # we can find the percentile of the scores
 mu = 435

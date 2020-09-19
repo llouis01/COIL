@@ -1,4 +1,11 @@
-### September 20th
+### September 20th, Loubens Louis
+
+
+
+# 1 what's the score to allow only best 35% to pass?
+
+qnorm(.65, 435, 72) # using qnorm up to 65%
+# 462.7431
 
 
 # 3
@@ -7,7 +14,8 @@
 (pnorm(13.6, 11.5, 2.1) - pnorm(9.4, 11.5, 2.1))
 
 
-# histograms of body data
+
+# 4 - histograms of body data
 library(xlsx)
 data = read.xlsx(choose.files(), 1)
 
@@ -39,6 +47,49 @@ height <- hist(data$HEIGHT,
                col = "purple",
                border = 'blue',
                las = 1)
+
+
+
+# 1 Real Estate exam score
+# using pnorm() with uppr and lwr bound, mean and sd,
+# we can find the percentile of the scores
+mu = 435
+sd = 72
+
+(pnorm(560, mu, sd) - pnorm(440, mu, sd))
+# 0.4310458
+
+(pnorm(620, mu, sd) - pnorm(380, mu, sd))
+# 0.7724402
+
+(pnorm(680, mu, sd) - pnorm(320, mu, sd)) * 100
+# 94.45584
+
+(pnorm(590, mu, sd)- pnorm(410, mu, sd)) * 100
+# 62.01197
+
+
+
+# 2 - Debt question
+# According to the question, debt accumulated a year aftr
+# opening account is normally distributed, so pnorm() will
+# work here
+
+mu = 700
+sd = 180
+
+(pnorm(3300, mu, sd) - pnorm(280, mu, sd))
+# .9902
+
+(pnorm(880, mu, sd) - pnorm(520, mu, sd))
+# .6827
+
+pnorm(850, mu, sd) # for p(X<x) just the pnorm( uppr)
+# 0.7976716
+
+(1 - (pnorm(850, mu, sd))) # 1 - lower bound for p(X>x)
+# 0.202328
+
 
 
 #

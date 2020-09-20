@@ -175,6 +175,11 @@ wght_upr_bound_3rd <- mean_wght + (3 * sd_wght) # 3 sd
 
 ((sum(data$HEIGHT > hgt_lwr_bound_2nd & data$HEIGHT < hgt_upr_bound_2nd) / nrow(data)) * nrow(data))
 
-sum(data$HEIGHT > hgt_lwr_bound_3rd & data$HEIGHT < hgt_upr_bound_3rd) / nrow(data)
+((sum(data$HEIGHT > hgt_lwr_bound_3rd & data$HEIGHT < hgt_upr_bound_3rd) / nrow(data)) * nrow(data))
 
-# actual count per sd bin for body height 4G
+# actual count per sd bin for body weight 4G
+((sum(data$WEIGHT > wght_lwr_bound_1st & data$wEIGHT < wght_upr_bound_1st) / nrow(data)) * nrow(data))
+
+((sum(data$WEIGHT > wght_lwr_bound_2nd & data$WEIGHT < wght_upr_bound_2nd) / nrow(data)) * nrow(data))
+
+((sum(data$WEIGHT > wght_lwr_bound_3rd & data$WEIGHT < wght_upr_bound_3rd) / nrow(data)) * nrow(data))

@@ -129,24 +129,39 @@ qqnorm(res3,
        col = 'blue')
 qqline(res3)
 
-# mean and sd for body fat, weight and height
+# 4f mean and sd for body fat, weight and height
 
 mean_fat <- mean(data$BODYFAT)
 sd_fat <- sd(data$BODYFAT)
 
-mean_wght <- mean(data$WEIGHT)
-sd_wght <- sd(data$WEIGHT)
-
 mean_hght <- mean(data$HEIGHT)
 sd_hght <- sd(data$HEIGHT)
 
-# 4h
+mean_wght <- mean(data$WEIGHT)
+sd_wght <- sd(data$WEIGHT)
+
+
+# 4g - uppr & lwr bound for sd
 fat_lwr_bound_1st <- mean_fat - sd_fat # -1 sd
-fat_lwr_bound_2nd <- mean_fat - (2*sd_fat) # -2 sd
-fat_lwr_bound_3rd <- mean_fat - (3*sd_fat) # -3 sd
+fat_lwr_bound_2nd <- mean_fat - (2 * sd_fat) # -2 sd
+fat_lwr_bound_3rd <- mean_fat - (3 * sd_fat) # -3 sd
 fat_upr_bound_1st <- mean_fat + sd_fat # 1 sd
-fat_upr_bound_2nd <- mean_fat + (2*sd_fat) # 2 sd
-fat_upr_bound_3rd <- mean_fat + (3*sd_fat) # 3 sd
+fat_upr_bound_2nd <- mean_fat + (2 * sd_fat) # 2 sd
+fat_upr_bound_3rd <- mean_fat + (3 * sd_fat) # 3 sd
+
+hgt_lwr_bound_1st <- mean_hght - sd_hght # -1 sd
+hgt_lwr_bound_2nd <- mean_hght - (2 * sd_hght) # -2 sd
+hgt_lwr_bound_3rd <- mean_hght - (3 * sd_hght) # -3 sd
+hgt_upr_bound_1st <- mean_hght + sd_hght # 1 sd
+hgt_upr_bound_2nd <- mean_hght + (2 * sd_hght) # 2 sd
+hgt_upr_bound_3rd <- mean_hght + (3 * sd_hght) # 3 sd
+
+wght_lwr_bound_1st <- mean_wght - sd_wght # -1 sd
+wght_lwr_bound_2nd <- mean_wght - (2 * sd_wght) # -2 sd
+wght_lwr_bound_3rd <- mean_wght - (3 * sd_wght) # -3 sd
+wght_upr_bound_1st <- mean_wght + sd_wght # 1 sd
+wght_upr_bound_2nd <- mean_wght + (2 * sd_wght) # 2 sd
+wght_upr_bound_3rd <- mean_wght + (3 * sd_wght) # 3 sd
 
 # actual count per sd bin for body fat 4G
 ((sum(data$BODYFAT > fat_lwr_bound_1st & data$BODYFAT < fat_upr_bound_1st) / nrow(data)) * nrow(data))
@@ -156,10 +171,15 @@ fat_upr_bound_3rd <- mean_fat + (3*sd_fat) # 3 sd
 (sum(data$BODYFAT > fat_lwr_bound_3rd & data$BODYFAT < fat_upr_bound_3rd) / nrow(data)) * nrow(data)
 
 #  actual count per sd bin for body height 4G
-((sum(data$HEIGHT > fat_lwr_bound_1st & data$HEIGHT < fat_upr_bound_1st) / nrow(data)) * nrow(data))
+((sum(data$HEIGHT > hgt_lwr_bound_1st & data$HEIGHT < hgt_upr_bound_1st) / nrow(data)) * nrow(data))
 
-((sum(data$HEIGHT > fat_lwr_bound_2nd & data$HEIGHT < fat_upr_bound_2nd) / nrow(data)) * nrow(data))
+((sum(data$HEIGHT > hgt_lwr_bound_2nd & data$HEIGHT < hgt_upr_bound_2nd) / nrow(data)) * nrow(data))
 
-((sum(data$HEIGHT > fat_lwr_bound_3rd & data$HEIGHT < fat_upr_bound_3rd) / nrow(data)) * nrow(data))
+((sum(data$HEIGHT > hgt_lwr_bound_3rd & data$HEIGHT < hgt_upr_bound_3rd) / nrow(data)) * nrow(data))
 
-# actual count per sd bin for body height 4G
+# actual count per sd bin for body weight 4G
+((sum(data$WEIGHT > wght_lwr_bound_1st & data$wEIGHT < wght_upr_bound_1st) / nrow(data)) * nrow(data))
+
+((sum(data$WEIGHT > wght_lwr_bound_2nd & data$WEIGHT < wght_upr_bound_2nd) / nrow(data)) * nrow(data))
+
+((sum(data$WEIGHT > wght_lwr_bound_3rd & data$WEIGHT < wght_upr_bound_3rd) / nrow(data)) * nrow(data))

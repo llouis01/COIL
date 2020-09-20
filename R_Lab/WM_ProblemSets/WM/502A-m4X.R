@@ -1,7 +1,5 @@
 ### September 20th, Loubens Louis
 
-
-
 # 1 what's the score to allow only best 35% to pass?
 # 1 Real Estate exam score
 
@@ -64,10 +62,13 @@ pnorm(850, mu, sd) # for p(X<x) just the pnorm( uppr)
 
 
 
+
 # 3
 # finding percentile in R
 # ((pnorm(lwer_bound, mu, sd) - pnorm(uppr_bound, mu, sd)
 (pnorm(13.6, 11.5, 2.1) - pnorm(9.4, 11.5, 2.1))
+
+
 
 
 
@@ -178,8 +179,8 @@ wght_upr_bound_3rd <- mean_wght + (3 * sd_wght) # 3 sd
 ((sum(data$HEIGHT > hgt_lwr_bound_3rd & data$HEIGHT < hgt_upr_bound_3rd) / nrow(data)) * nrow(data))
 
 # actual count per sd bin for body weight 4G
-((sum(data$WEIGHT > wght_lwr_bound_1st & data$wEIGHT < wght_upr_bound_1st) / nrow(data)) * nrow(data))
+sum(data$WEIGHT > wght_lwr_bound_1st & data$WEIGHT < wght_upr_bound_1st)
 
-((sum(data$WEIGHT > wght_lwr_bound_2nd & data$WEIGHT < wght_upr_bound_2nd) / nrow(data)) * nrow(data))
+sum(data$WEIGHT > wght_lwr_bound_2nd & data$WEIGHT < wght_upr_bound_2nd)
 
-((sum(data$WEIGHT > wght_lwr_bound_3rd & data$WEIGHT < wght_upr_bound_3rd) / nrow(data)) * nrow(data))
+sum(data$WEIGHT > wght_lwr_bound_3rd & data$WEIGHT < wght_upr_bound_3rd)

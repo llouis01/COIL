@@ -4,7 +4,7 @@ rm(list = ls())
 require(xlsx)
 
 #Import Data
-data <- read.xlsx("C:/Novice Problem sets and solution/Module 4 - Novice Dataset - Normtemp.xls", 1)
+data <- read.xlsx(choose.files(), 1)
 
 #Looking at the data types and overview of the data
 str(data)
@@ -20,17 +20,17 @@ upper <- 560
 (pnorm(upper,avg,sd)-pnorm(lower,avg,sd))*n
 
 #Part B
-lower <- 380 
+lower <- 380
 upper <- 620
 (pnorm(upper,avg,sd)-pnorm(lower,avg,sd))*n
 
 #Part C
-lower <- 320 
+lower <- 320
 upper <- 680
 (pnorm(upper,avg,sd)-pnorm(lower,avg,sd))*n
 
 #Part D
-lower <- 410 
+lower <- 410
 upper <- 590
 (pnorm(upper,avg,sd)-pnorm(lower,avg,sd))*n
 
@@ -45,7 +45,7 @@ upper <- 3.3
 (pnorm(upper,avg,sd)-pnorm(lower,avg,sd))*100
 
 #Part B
-lower <- 2.11 
+lower <- 2.11
 upper <- 3.5
 (pnorm(upper,avg,sd)-pnorm(lower,avg,sd))
 
@@ -68,17 +68,17 @@ upper <- 140
 (pnorm(upper,avg,sd)-pnorm(lower,avg,sd))
 
 #Part B
-lower <- 90 
+lower <- 90
 upper <- 115
 (pnorm(upper,avg,sd)-pnorm(lower,avg,sd))
 
 #Part C
-lower <- 100 
+lower <- 100
 upper <- 155
 (pnorm(upper,avg,sd)-pnorm(lower,avg,sd))*n
 
 #Part D
-lower <- 140 
+lower <- 140
 1-pnorm(lower,avg,sd)
 
 #Part E
@@ -102,14 +102,14 @@ cbind(bins[-8],gen2freq$counts)
 
 reg1 <- lm(Body.Temp~., data=gender1)
 res1 <- rstandard(reg1)
-qqnorm(res1, ylab="Standardized Residuals", 
-       xlab="Normal Scores") 
+qqnorm(res1, ylab="Standardized Residuals",
+       xlab="Normal Scores")
 qqline(res1)
 
 reg2 <- lm(Body.Temp~., data=gender2)
 res2 <- rstandard(reg2)
-qqnorm(res2, ylab="Standardized Residuals", 
-       xlab="Normal Scores") 
+qqnorm(res2, ylab="Standardized Residuals",
+       xlab="Normal Scores")
 qqline(res2)
 
 gen1avg <- mean(gender1$Body.Temp)

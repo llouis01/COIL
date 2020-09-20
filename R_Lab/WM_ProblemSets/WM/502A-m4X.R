@@ -75,8 +75,6 @@ pnorm(850, mu, sd) # for p(X<x) just the pnorm( uppr)
 library(xlsx)
 data = read.xlsx(choose.files(), 1)
 
-data$BODYFAT
-
 bod_fat <- hist(data$BODYFAT,
      breaks = 15,
      main = "Histogram of Body Fat",
@@ -103,3 +101,54 @@ height <- hist(data$HEIGHT,
                col = "purple",
                border = 'blue',
                las = 1)
+
+# probability plot for body fat
+reg1 <- lm(data$BODYFAT~data$WEIGHT+data$HEIGHT, data = data)
+res1 <- rstandard(reg1)
+qqnorm(res1,
+       ylab="Standardized Residuals",
+       xlab="Normal Scores",
+       col = 'red')
+qqline(res1)
+
+# # probability plot for body weight
+reg2 <- lm(data$WEIGHT~data$BODYFAT+data$HEIGHT, data = data)
+res2 <- rstandard(reg2)
+qqnorm(res2,
+       ylab="Standardized Residuals",
+       xlab="Normal Scores",
+       col = 'turquoise')
+qqline(res2)
+
+# probability plot for height
+reg3 <- lm(data$HEIGHT~data$BODYFAT+data$WEIGHT, data = data)
+res3 <- rstandard(reg3)
+qqnorm(res3,
+       ylab="Standardized Residuals",
+       xlab="Normal Scores",
+       col = 'blue')
+qqline(res3)
+
+# mean and sd for body fat, weight and height
+
+mean_fat <- mean(data$BODYFAT) #
+sd_fat <- sd(data$BODYFAT)
+
+mean_wght <- mean(data$WEIGHT)
+sd_wght <- sd(data$WEIGHT)
+
+mean_hght <- mean(data$HEIGHT)
+sd_hght <- sd(data$HEIGHT)
+
+# 4h
+fat_lwr_bound_1st <- mean_fat - sd_fat # -1 sd
+fat_lwr_bound_2nd <- mean_fat - (2*sd_fat) # -2 sd
+fat_lwr_bound_3rd <- mean_fat - (3*sd_fat) # -3 sd
+fat_upr_bound_1st <- mean_fat + sd_fat # 1 sd
+fat_upr_bound_2nd <- mean_fat + (2*sd_fat) # 2 sd
+fat_upr_bound_3rd <- mean_fat + (3*sd_fat) # 3 sd
+
+# actual count per sd bin
+((sum(data$BODYFAT > fat_lwr_bound_1st & data$BODYFAT < fat_upr_bound_1st) / nrow(data)) * nrow(data))
+
+(sum(data$BODYFAT > fat_lwr_bound_2nd & data$BODYFAT < fat_upr_bound_2nd) / nrow(data)) * nrow(data)

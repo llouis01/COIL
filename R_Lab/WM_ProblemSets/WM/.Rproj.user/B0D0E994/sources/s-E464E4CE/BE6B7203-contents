@@ -148,9 +148,18 @@ fat_upr_bound_1st <- mean_fat + sd_fat # 1 sd
 fat_upr_bound_2nd <- mean_fat + (2*sd_fat) # 2 sd
 fat_upr_bound_3rd <- mean_fat + (3*sd_fat) # 3 sd
 
-# actual count per sd bin for body fat
+# actual count per sd bin for body fat 4G
 ((sum(data$BODYFAT > fat_lwr_bound_1st & data$BODYFAT < fat_upr_bound_1st) / nrow(data)) * nrow(data))
 
 (sum(data$BODYFAT > fat_lwr_bound_2nd & data$BODYFAT < fat_upr_bound_2nd) / nrow(data)) * nrow(data)
 
 (sum(data$BODYFAT > fat_lwr_bound_3rd & data$BODYFAT < fat_upr_bound_3rd) / nrow(data)) * nrow(data)
+
+#  actual count per sd bin for body height 4G
+((sum(data$HEIGHT > fat_lwr_bound_1st & data$HEIGHT < fat_upr_bound_1st) / nrow(data)) * nrow(data))
+
+((sum(data$HEIGHT > fat_lwr_bound_2nd & data$HEIGHT < fat_upr_bound_2nd) / nrow(data)) * nrow(data))
+
+((sum(data$HEIGHT > fat_lwr_bound_3rd & data$HEIGHT < fat_upr_bound_3rd) / nrow(data)) * nrow(data))
+
+# actual count per sd bin for body height 4G

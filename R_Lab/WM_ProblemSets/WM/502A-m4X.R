@@ -131,7 +131,7 @@ qqline(res3)
 
 # mean and sd for body fat, weight and height
 
-mean_fat <- mean(data$BODYFAT) #
+mean_fat <- mean(data$BODYFAT)
 sd_fat <- sd(data$BODYFAT)
 
 mean_wght <- mean(data$WEIGHT)

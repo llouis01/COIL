@@ -131,7 +131,7 @@ qqline(res3)
 
 # mean and sd for body fat, weight and height
 
-mean_fat <- mean(data$BODYFAT) #
+mean_fat <- mean(data$BODYFAT)
 sd_fat <- sd(data$BODYFAT)
 
 mean_wght <- mean(data$WEIGHT)
@@ -148,7 +148,9 @@ fat_upr_bound_1st <- mean_fat + sd_fat # 1 sd
 fat_upr_bound_2nd <- mean_fat + (2*sd_fat) # 2 sd
 fat_upr_bound_3rd <- mean_fat + (3*sd_fat) # 3 sd
 
-# actual count per sd bin
+# actual count per sd bin for body fat
 ((sum(data$BODYFAT > fat_lwr_bound_1st & data$BODYFAT < fat_upr_bound_1st) / nrow(data)) * nrow(data))
 
 (sum(data$BODYFAT > fat_lwr_bound_2nd & data$BODYFAT < fat_upr_bound_2nd) / nrow(data)) * nrow(data)
+
+(sum(data$BODYFAT > fat_lwr_bound_3rd & data$BODYFAT < fat_upr_bound_3rd) / nrow(data)) * nrow(data)

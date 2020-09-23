@@ -10,4 +10,9 @@ hist(zip_data$X..Successes,
      col = 'Turquoise',
      las = 1)
 
+mean(zip_data$X..Successes)
+sd(zip_data$X..Successes)
+(mean(zip_data$X..Successes) - sd(zip_data$X..Successes)) # lower boundary
+(mean(zip_data$X..Successes) + sd(zip_data$X..Successes)) # uppr boundary
+
 # 1b -- 

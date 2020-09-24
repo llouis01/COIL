@@ -16,4 +16,7 @@ sd(zip_data$X..Successes)
 (mean(zip_data$X..Successes) - sd(zip_data$X..Successes)) # lower boundary
 (mean(zip_data$X..Successes) + sd(zip_data$X..Successes)) # uppr boundary
 
-# 1b --
+# 2a
+ME = 0.025
+conf = 1.96
+n_size = 0.5 * 0.5 / ((ME / conf)**2)

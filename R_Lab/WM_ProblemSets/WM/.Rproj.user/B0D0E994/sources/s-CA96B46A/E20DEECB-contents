@@ -20,3 +20,16 @@ sd(zip_data$X..Successes)
 ME = 0.025
 conf = 1.96
 n_size = 0.5 * 0.5 / ((ME / conf)**2)
+n_size
+
+# 2B
+conf2 <- 2.576
+n_size2 <- 0.5 * 0.5 / ((ME / conf2)**2)
+n_size2
+
+# 2c
+ME2 <- 0.05
+n_size3 <- 0.5 * 0.5 / ((ME2 / conf)**2)
+n_size3
+
+

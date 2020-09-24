@@ -28,7 +28,7 @@ n_size2 <- 0.5 * 0.5 / ((ME / conf2)**2)
 n_size2
 
 # 2c
-ME2 <- 0.05
+ME2 <- 1
 n_size3 <- 0.5 * 0.5 / ((ME2 / conf)**2)
 n_size3
 

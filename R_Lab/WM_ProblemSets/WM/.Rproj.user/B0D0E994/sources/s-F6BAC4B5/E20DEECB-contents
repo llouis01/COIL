@@ -83,3 +83,12 @@ confIntr <- function(p_hat, n, conf = .95)
 }
 
 confIntr(p_hat, n)
+
+
+# 6
+n6 <- 913
+p17 <- .54
+p18 <- .53
+all_2017 <- n6 * p17
+all_2018 <- n6 * p18
+z_score <- (all_2017 + all_2018) / (n * 2)

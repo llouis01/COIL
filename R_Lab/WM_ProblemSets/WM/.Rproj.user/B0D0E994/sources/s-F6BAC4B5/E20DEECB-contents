@@ -33,3 +33,15 @@ n_size3 <- 0.5 * 0.5 / ((ME2 / conf)**2)
 n_size3
 
 
+### Olena session
+predict = .32
+n = 425
+yes = 195
+p_hat = yes / n
+
+h0 <- predict
+sd_p_hat <- sqrt((predict * (1 - predict))/n)
+
+se_p_hat <- sqrt((p_hat * (1 - p_hat))/n)
+
+z_stat <- (p_hat - predict) / se_p_hat

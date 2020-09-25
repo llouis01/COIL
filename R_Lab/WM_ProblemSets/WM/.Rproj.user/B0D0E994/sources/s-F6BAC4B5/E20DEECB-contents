@@ -56,3 +56,11 @@ library(stats)
 prop.test(260, 500, 0.5, 'two.sided', correct = F)
 
 
+# 4b
+p4_hat <- 14/60
+p4_hat
+
+se_p4_hat <- sqrt((p4_hat * (1 - p4_hat))/n)
+conf_ll <- p4_hat - 1.96 * se_p4_hat
+conf_ul <- p4_hat + 1.96 * se_p4_hat
+print(paste("Confidence Interval --> (", round(conf_ll, 2), ", ", round(conf_ul, 2), ")", sep = ""))

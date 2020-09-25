@@ -64,3 +64,31 @@ se_p4_hat <- sqrt((p4_hat * (1 - p4_hat))/n)
 conf_ll <- p4_hat - 1.96 * se_p4_hat
 conf_ul <- p4_hat + 1.96 * se_p4_hat
 print(paste("Confidence Interval --> (", round(conf_ll, 2), ", ", round(conf_ul, 2), ")", sep = ""))
+
+
+
+## 3a
+
+n = 500
+p_hat <- .65
+
+confIntr <- function(p_hat, n, conf = .95)
+{
+  se = sqrt((p_hat * (1 - p_hat))/n)
+  al2 = 1 - (1 - conf)/2
+  zstar = qnorm(al2)
+  ul = p_hat + zstar*se
+  ll = p_hat - zstar*se
+  return(c(ll, ul))
+}
+
+confIntr(p_hat, n)
+
+
+# 6
+n6 <- 913
+p17 <- .54
+p18 <- .53
+all_2017 <- n6 * p17
+all_2018 <- n6 * p18
+z_score <- (all_2017 + all_2018) / (n * 2)

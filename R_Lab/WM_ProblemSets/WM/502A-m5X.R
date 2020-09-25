@@ -33,6 +33,11 @@ n_size3 <- 0.5 * 0.5 / ((ME2 / conf)**2)
 n_size3
 
 
+
+# confidence int
+# p_hat +- z-val * se(p_hat)
+# ME = z-val * se(p_hat) then conf int is estimate += ME
+
 ### Olena session
 predict = .32
 n = 425
@@ -45,3 +50,9 @@ sd_p_hat <- sqrt((predict * (1 - predict))/n)
 se_p_hat <- sqrt((p_hat * (1 - p_hat))/n)
 
 z_stat <- (p_hat - predict) / se_p_hat
+
+library(stats)
+
+prop.test(260, 500, 0.5, 'two.sided', correct = F)
+
+

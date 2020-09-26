@@ -5,16 +5,18 @@ library(xlsx)
 # 1a -- Create histogram for zip code simulation data
 # p_hat = success/n
 zip_data <- read.xlsx(choose.files(), 1)
+
+
 hist(zip_data$X..Successes,
      main = 'Zip Code Simulation Histogram',
      xlab = 'Success Rate',
      col = 'Turquoise',
      las = 1)
 
-mean(zip_data$X..Successes)
-sd(zip_data$X..Successes)
-(mean(zip_data$X..Successes) - sd(zip_data$X..Successes)) # lower boundary
-(mean(zip_data$X..Successes) + sd(zip_data$X..Successes)) # uppr boundary
+# 1d
+sum_num_succ <- sum(zip_data$X..Successes)
+sd_zip <- sqrt(.85 * .15)/50000
+se_zip <- sqrt(.84 * .16)/50000
 
 # 2a
 ME = 0.025
@@ -32,6 +34,23 @@ ME2 <- 1
 n_size3 <- 0.5 * 0.5 / ((ME2 / conf)**2)
 n_size3
 
+
+## 3a
+
+n = 867
+p_hat <- .65
+
+confIntr <- function(p_hat, n, conf = .98)
+{
+  se = sqrt((p_hat * (1 - p_hat))/n)
+  al2 = 1 - (1 - conf)/2
+  zstar = qnorm(al2)
+  ul = p_hat + zstar*se
+  ll = p_hat - zstar*se
+  return(c(ll, ul))
+}
+
+confIntr(p_hat, n)
 
 
 # confidence int
@@ -65,24 +84,6 @@ conf_ll <- p4_hat - 1.96 * se_p4_hat
 conf_ul <- p4_hat + 1.96 * se_p4_hat
 print(paste("Confidence Interval --> (", round(conf_ll, 2), ", ", round(conf_ul, 2), ")", sep = ""))
 
-
-
-## 3a
-
-n = 500
-p_hat <- .65
-
-confIntr <- function(p_hat, n, conf = .95)
-{
-  se = sqrt((p_hat * (1 - p_hat))/n)
-  al2 = 1 - (1 - conf)/2
-  zstar = qnorm(al2)
-  ul = p_hat + zstar*se
-  ll = p_hat - zstar*se
-  return(c(ll, ul))
-}
-
-confIntr(p_hat, n)
 
 
 # 6

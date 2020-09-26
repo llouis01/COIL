@@ -85,6 +85,14 @@ conf_ul <- p4_hat + 1.96 * se_p4_hat
 print(paste("Confidence Interval --> (", round(conf_ll, 2), ", ", round(conf_ul, 2), ")", sep = ""))
 
 
+# 5b
+p = .32
+n = 425
+phat <- 195/425
+sd_ph <- sqrt((phat * (1 - phat)) / n)
+sd_ph
+
+
 
 # 6
 n6 <- 913

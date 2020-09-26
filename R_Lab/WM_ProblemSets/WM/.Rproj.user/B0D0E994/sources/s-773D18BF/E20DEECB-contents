@@ -100,4 +100,9 @@ p17 <- .54
 p18 <- .53
 all_2017 <- n6 * p17
 all_2018 <- n6 * p18
-z_score <- (all_2017 + all_2018) / (n * 2)
+z_score <- (all_2017 + all_2018) / (n6 * 2)
+e_diff <- p17 - p18
+var <- (p17 * (1 - p17))/n6 + (p18 * (1 - p18))/n6
+var
+z_score <- e_diff/var
+z_score

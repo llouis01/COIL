@@ -68,13 +68,13 @@ final_bal = c(balance(rate = 0.01, years = 20),
               balance(rate = 0.08, years = 20),
               balance(rate = 0.09, years = 20))
 
-
-plot(final_bal)
-
-
-
-
-
+plot(final_bal,
+     col = 'blue',
+     ylab = 'Final Balance After 20 Years',
+     xlab = 'Interest rates',
+     type = 'b',
+     las = 1,
+     main = 'Final Balance After 20 Years at Different rates')
 
 
 

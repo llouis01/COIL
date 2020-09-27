@@ -20,3 +20,18 @@ x <- scan()
 # [1] 2 3 2 3 2 3 3 2 3 2 3 2 3 4
 
 # Reading from outside file
+y = scan("C:\\Users\\Loube\\Desktop\\temp.txt")
+# ensure file is in directory or set the path
+
+z = matrix(scan("C:\\Users\\Loube\\Desktop\\temp.txt"), 2, 3)
+# scan file in to a matrice
+
+# inputs r output into a file of your choosing then stops with sink()
+sink("file.name")
+2+2
+mean(c(2,3,4,5))
+sink()
+
+sink("contract.txt")
+print("here ye, here ye!")
+sink()

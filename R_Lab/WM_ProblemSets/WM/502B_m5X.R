@@ -37,7 +37,16 @@ datasets::islands
 
 ########## R Practice ##########
 
-#### I/O ####
+####### I/O
+
+dump('cars', 'cars_file') # put object into file
+rm(cars) # delete the object from the environment
+source('cars_file') # reinstate the object by sourcing the file
+
+save.image('file77') # save objects from session into file
+load('file77') # load objects from file
+getwd()
+write.table(Formaldehyde, "Formaldehyde_data") # writes data frame to a file
 
 # scan()
 x <- scan()
@@ -71,6 +80,7 @@ source("C:\\Users\\Loube\\Desktop\\smallVector.txt")
 # print must be included in instructions otherwise data won't show
 
 
+
 #######  Probability
 
 rbinom(500, 100, .85) # 500 realizations of size 100 w/ 85% probability
@@ -86,13 +96,17 @@ sample(7, 5, replace = TRUE) # repeats when replace is true
 y = c('three', 'four', 'six')
 sample(y, 9, replace = T, prob = 1:3/32)
 
-####### I/O
+pbinom(3, 5, 1/2) # probability of 3 heads from 5 tosses of a fair coin
+# F(3) = P(X <= 3)
+# P(X = 0) + P(X = 1) + P(X = 2) + P(X = 3)
 
-dump('cars', 'cars_file') # put object into file
-rm(cars) # delete the object from the environment
-source('cars_file') # reinstate the object by sourcing the file
+rbinom(100, 70, .5) # 100 variates, of size 70, with a 50% probability
+mean(rbinom(100, 70, .9))
 
-save.image('file77') # save objects from session into file
-load('file77') # load objects from file
-getwd()
-write.table(Formaldehyde, "Formaldehyde_data") # writes data frame to a file
+# probability of exactly 7 customers arriving at checkout
+# between 430 and 445. mean or lambda is 7
+dpois(7, 10)
+
+# probability of more than 10; find p(X = 10) then subtract 1 from P(X = 10)
+# or use
+1 - ppois(10, 10)

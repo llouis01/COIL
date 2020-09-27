@@ -1,4 +1,4 @@
-######## Loubens Louis
+######## Loubens Louis, sEPTEMBER 27TH
 
 # 18.2
 source("C:\\Users\\Loube\\Desktop\\smallVector.txt")
@@ -8,7 +8,22 @@ x = mean(scan("C:\\Users\\Loube\\Desktop\\mean_scan.txt", quiet = T))
 print(paste("the mean of x is ", x, "."))
 
 # 19.1
-pnorm()
+pnorm(70, 70, 3, lower.tail = F)
+
+# 19.2
+dbinom(2, 3, 2/3)
+
+
+
+
+
+
+
+
+
+
+
+
 
 ########## R Practice ##########
 
@@ -48,3 +63,15 @@ source("C:\\Users\\Loube\\Desktop\\smallVector.txt")
 
 ####  Probability ####
 
+rbinom(500, 100, .85) # 500 realizations of size 100 w/ 85% probability
+
+
+# uniform(a = 0, b = 1)
+set.seed(9)
+runif(5)
+
+x <- 1:1000
+# sample( x, size, replace = FALSE, prob = NULL)
+sample(7, 5, replace = TRUE) # repeats when replace is true
+y = c('three', 'four', 'six')
+sample(y, 9, replace = T, prob = 1:3/32)

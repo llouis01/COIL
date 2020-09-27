@@ -1,7 +1,0 @@
-######## Loubens Louis
-
-# 18.2
-source("C:\\Users\\Loube\\Desktop\\smallVector.txt")
-
-# 19.1
-pnorm()

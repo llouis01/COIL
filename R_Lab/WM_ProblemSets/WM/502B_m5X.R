@@ -20,10 +20,17 @@ mean(runif(1000000))
 prod(rbinom(2, 3, 0.4))
 
 # 20.1
+cars = datasets::cars
+plot(cars$speed, cars$dist,
+     main = "Scatterplot of Car Speed on Distance",
+     col = 'purple',
+     xlab = 'MPH',
+     ylab = 'Stopping Distance',
+     frame.plot = F,
+     las = 1)
 
-
-
-
+# 20.4
+datasets::islands
 
 
 

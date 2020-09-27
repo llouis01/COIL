@@ -29,7 +29,8 @@ plot(cars$speed, cars$dist,
      frame.plot = F,
      las = 1)
 
-
+# 20.4
+datasets::islands
 
 
 

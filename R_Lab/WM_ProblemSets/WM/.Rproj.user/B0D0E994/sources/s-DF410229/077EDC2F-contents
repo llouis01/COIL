@@ -1,23 +1,30 @@
 ######## Loubens Louis, sEPTEMBER 27TH
 
+
 # 18.2
 source("C:\\Users\\Loube\\Desktop\\smallVector.txt")
+
 
 # 18.3
 x = mean(scan("C:\\Users\\Loube\\Desktop\\mean_scan.txt", quiet = T))
 print(paste("the mean of x is ", x, "."))
 
+
 # 19.1
 pnorm(70, 70, 3, lower.tail = F)
+
 
 # 19.2
 dbinom(2, 3, 2/3)
 
+
 # 19.12
 mean(runif(1000000))
 
+
 # 19.14
 prod(rbinom(2, 3, 0.4))
+
 
 # 20.1
 cars = datasets::cars
@@ -29,16 +36,19 @@ plot(cars$speed, cars$dist,
      frame.plot = F,
      las = 1)
 
+
 # 20.4
 isle = islands
 isle
 qqnorm(isle)
 qqline(isle, col = 'red')
 
+
 # 21.2
 x = seq(0, 4 * pi, length.out = 100)
 y = cos(x)
-plot(y, type = 'l', col = 'turquoise')
+plot(y, type = 'b', col = 'red')
+
 
 # 21.6
 balance = function(deposit = 1000, rate = 0.05, years =30)
@@ -46,10 +56,20 @@ balance = function(deposit = 1000, rate = 0.05, years =30)
         return(deposit * (1 + rate) ^ years)
 }
 
+balance()
+
+final_bal = c(balance(rate = 0.01, years = 20),
+              balance(rate = 0.02, years = 20),
+              balance(rate = 0.03, years = 20),
+              balance(rate = 0.04, years = 20),
+              balance(rate = 0.05, years = 20),
+              balance(rate = 0.06, years = 20),
+              balance(rate = 0.07, years = 20),
+              balance(rate = 0.08, years = 20),
+              balance(rate = 0.09, years = 20))
 
 
-
-
+plot(final_bal)
 
 
 

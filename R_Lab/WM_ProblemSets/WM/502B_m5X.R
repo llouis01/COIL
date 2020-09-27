@@ -30,18 +30,18 @@ plot(cars$speed, cars$dist,
      las = 1)
 
 # 20.4
-datasets::islands
 isle = islands
 isle
 qqnorm(isle)
-qqplot(isle)
-qqline(isle)
+qqline(isle, col = 'red')
 
 # 21.2
 
 # 21.6
-
-
+balance = function(deposit = 1000, rate = 0.05, years =30)
+{
+        return(deposit * (1 + rate) ^ years)
+}
 
 
 
@@ -163,3 +163,22 @@ image(crimtab)
 persp(crimtab)
 ts.plot(AirPassengers)
 
+par(mar = c(5, 5, 5, 5)) # bottom, left, top, right margin
+plot(c(0, 9), c(-10, 20), type = 'n', ylab = "")
+text(6, 10, "Plotting Region")
+points(4, -10)
+points(8, 16, pch = 3)
+polygon(c(0, 0, 1, 1), c(0, 2, 1, 0), col = 'gold')
+text(2, 19, "bold font", font = 2, cex = .5)
+x = seq(0, 4, by = .1)
+y = x ^ 2 - 3
+lines(x, y)
+arrows(6, 6, x[33], y[33])
+
+x = seq(-2, 3, by = 0.01)
+y = x ^ 2
+plot(x, y, type = "l", lwd = 3, xlab = "", ylab = "",
+     xlim = c(-2, 3),
+     ylim = c(0, 9), axes = F)
+axis(side = 1, labels = T, at = -2:3, font = 1)
+axis(side = 2, labels = T, at = c(0, 4, 9), font = 1, las = 1)

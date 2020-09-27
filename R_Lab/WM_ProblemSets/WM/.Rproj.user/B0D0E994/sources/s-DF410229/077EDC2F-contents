@@ -110,3 +110,33 @@ dpois(7, 10)
 # probability of more than 10; find p(X = 10) then subtract 1 from P(X = 10)
 # or use
 1 - ppois(10, 10)
+
+
+####### Graphics
+pairs(trees)
+contour(crimtab)
+image(quakes)
+persp(crimtab)
+ts.plot(AirPassengers)
+
+plot.ecdf(quakes$depth)
+fivenum(quakes$depth)
+boxplot(quakes$depth)
+qqnorm(islands)
+qqline(islands)
+hist(islands)
+
+boxplot(count ~ spray, data = InsectSprays)
+boxplot(dist ~ speed, data = cars)
+
+plot(quakes$long, quakes$lat)
+symbols(quakes$long, quakes$lat, circles = 2 ^ quakes$mag)
+
+# 3d
+pairs(trees)
+pairs(iris3)
+stars(trees, draw.segments = T)
+contour(crimtab)
+image(crimtab)
+persp(crimtab)
+ts.plot(AirPassengers)

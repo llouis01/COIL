@@ -31,6 +31,28 @@ plot(cars$speed, cars$dist,
 
 # 20.4
 datasets::islands
+isle = islands
+isle
+qqnorm(isle)
+qqplot(isle)
+qqline(isle)
+
+# 21.2
+
+# 21.6
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -122,7 +144,7 @@ ts.plot(AirPassengers)
 plot.ecdf(quakes$depth)
 fivenum(quakes$depth)
 boxplot(quakes$depth)
-qqnorm(islands)
+qqnorm(quakes)
 qqline(islands)
 hist(islands)
 
@@ -140,3 +162,4 @@ contour(crimtab)
 image(crimtab)
 persp(crimtab)
 ts.plot(AirPassengers)
+

@@ -96,8 +96,3 @@ sample(7, 5, replace = TRUE) # repeats when replace is true
 y = c('three', 'four', 'six')
 sample(y, 9, replace = T, prob = 1:3/32)
 
-
-
-
-
-####### 

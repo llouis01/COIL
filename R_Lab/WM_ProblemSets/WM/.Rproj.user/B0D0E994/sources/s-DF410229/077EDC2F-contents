@@ -197,3 +197,5 @@ eda = function(x) {
 
 eda(rivers) # not a good fit
 eda(precip)
+
+eda(rnorm(200))

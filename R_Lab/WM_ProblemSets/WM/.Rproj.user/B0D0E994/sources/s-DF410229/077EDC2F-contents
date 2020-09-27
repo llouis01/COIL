@@ -36,6 +36,9 @@ qqnorm(isle)
 qqline(isle, col = 'red')
 
 # 21.2
+x = seq(0, 4 * pi, length.out = 100)
+y = cos(x)
+plot(y, type = 'l', col = 'turquoise')
 
 # 21.6
 balance = function(deposit = 1000, rate = 0.05, years =30)

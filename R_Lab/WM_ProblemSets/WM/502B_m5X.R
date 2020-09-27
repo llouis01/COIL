@@ -36,6 +36,9 @@ qqnorm(isle)
 qqline(isle, col = 'red')
 
 # 21.2
+x = seq(0, 4 * pi, length.out = 100)
+y = cos(x)
+plot(y, type = 'l', col = 'turquoise')
 
 # 21.6
 balance = function(deposit = 1000, rate = 0.05, years =30)
@@ -182,3 +185,20 @@ plot(x, y, type = "l", lwd = 3, xlab = "", ylab = "",
      ylim = c(0, 9), axes = F)
 axis(side = 1, labels = T, at = -2:3, font = 1)
 axis(side = 2, labels = T, at = c(0, 4, 9), font = 1, las = 1)
+text(3.5, -0.3, 'x', font = 1, xpd = T)
+text(-2.2, 10.3, 'y', font = 1, xpd = T)
+
+
+eda = function(x) {
+        par(mfrow = c(2, 2))
+        boxplot(x)
+        hist(x)
+        plot.ecdf(x, verticals = T, pch = "")
+        qqnorm(x) # is data set evenly distributed
+        qqline(x, col = 'red')
+}
+
+eda(rivers) # not a good fit
+eda(precip)
+
+eda(rnorm(200))

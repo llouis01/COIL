@@ -85,3 +85,14 @@ x <- 1:1000
 sample(7, 5, replace = TRUE) # repeats when replace is true
 y = c('three', 'four', 'six')
 sample(y, 9, replace = T, prob = 1:3/32)
+
+####### I/O
+
+dump('cars', 'cars_file') # put object into file
+rm(cars) # delete the object from the environment
+source('cars_file') # reinstate the object by sourcing the file
+
+save.image('file77') # save objects from session into file
+load('file77') # load objects from file
+getwd()
+write.table(Formaldehyde, "Formaldehyde_data") # writes data frame to a file

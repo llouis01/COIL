@@ -71,7 +71,7 @@ source("C:\\Users\\Loube\\Desktop\\smallVector.txt")
 # print must be included in instructions otherwise data won't show
 
 
-####  Probability ####
+#######  Probability
 
 rbinom(500, 100, .85) # 500 realizations of size 100 w/ 85% probability
 

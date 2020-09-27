@@ -186,3 +186,14 @@ text(3.5, -0.3, 'x', font = 1, xpd = T)
 text(-2.2, 10.3, 'y', font = 1, xpd = T)
 
 
+eda = function(x) {
+        par(mfrow = c(2, 2))
+        boxplot(x)
+        hist(x)
+        plot.ecdf(x, verticals = T, pch = "")
+        qqnorm(x) # is data set evenly distributed
+        qqline(x, col = 'red')
+}
+
+eda(rivers) # not a good fit
+eda(precip)

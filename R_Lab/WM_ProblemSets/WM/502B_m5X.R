@@ -13,7 +13,8 @@ pnorm(70, 70, 3, lower.tail = F)
 # 19.2
 dbinom(2, 3, 2/3)
 
-
+# 19.12
+mean(runif(1000000))
 
 
 

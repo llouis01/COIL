@@ -3,6 +3,10 @@
 # 18.2
 source("C:\\Users\\Loube\\Desktop\\smallVector.txt")
 
+# 18.3
+x = mean(scan("C:\\Users\\Loube\\Desktop\\mean_scan.txt", quiet = T))
+print(paste("the mean of x is ", x, "."))
+
 # 19.1
 pnorm()
 
@@ -40,3 +44,7 @@ sink()
 
 source("C:\\Users\\Loube\\Desktop\\smallVector.txt")
 # print must be included in instructions otherwise data won't show
+
+
+####  Probability ####
+

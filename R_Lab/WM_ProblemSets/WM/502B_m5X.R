@@ -8,6 +8,7 @@ pnorm()
 
 ########## R Practice ##########
 
+#### I/O ####
 
 # scan()
 x <- scan()
@@ -21,6 +22,7 @@ x <- scan()
 
 # Reading from outside file
 y = scan("C:\\Users\\Loube\\Desktop\\temp.txt")
+# can also read from website as scan(url)
 # ensure file is in directory or set the path
 
 z = matrix(scan("C:\\Users\\Loube\\Desktop\\temp.txt"), 2, 3)
@@ -33,5 +35,8 @@ mean(c(2,3,4,5))
 sink()
 
 sink("contract.txt")
-print("here ye, here ye!")
+print(mean(c(3, 4, 5)))
 sink()
+
+source("C:\\Users\\Loube\\Desktop\\smallVector.txt")
+# print must be included in instructions otherwise data won't show

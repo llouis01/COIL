@@ -3,23 +3,23 @@
     "path": "~/GitHub/Data_Analysis/R_Lab/WM_ProblemSets/WM/502B_m5X.R",
     "project_path": "502B_m5X.R",
     "type": "r_source",
-    "hash": "2641610284",
+    "hash": "0",
     "contents": "",
-    "dirty": false,
+    "dirty": true,
     "created": 1601092872537.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
         "tempName": "Untitled1",
-        "cursorPosition": "28,68",
-        "scrollLine": "5"
+        "cursorPosition": "44,5",
+        "scrollLine": "13"
     },
     "folds": "",
-    "lastKnownWriteTime": 1601171115,
+    "lastKnownWriteTime": 1601171548,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1601171115059,
+    "last_content_update": 1601171564018,
     "read_only": false,
     "read_only_alternatives": []
 }

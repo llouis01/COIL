@@ -28,4 +28,19 @@ qqline(te_nw, col = 'red')
 te_nw[te_nw>800000] # outlier above 800k
 te_nw[te_nw<200000] # outlier below 200k
 
-#
+# 2c - t-test
+t.test(te_nw, alternative = "two.sided", mu = 425000)
+# 2204460492503131 p-value
+
+# 3a - histogram of bb
+
+# import data
+bb_data <- read.xlsx("C:\\Users\\Loube\\OneDrive - William & Mary\\Bus_Stats_BUAD502A\\Assignments\\buad502a-m6-expert-dataset-basketball.xls", 1)
+
+# stats
+bb_n <- length(bb_data$Player..)
+bb_3p <- bb_data$Mean.3.pointers
+bb_mean <- mean(bb_3p)
+bb_sd <- sd(bb_3p)
+summary(bb_3p)
+bb_se <- bb_sd / sqrt(bb_n)

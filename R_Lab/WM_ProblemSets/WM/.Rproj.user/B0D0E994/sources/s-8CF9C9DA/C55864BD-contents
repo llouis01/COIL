@@ -3,7 +3,7 @@
 # import needed libraries
 library(xlsx)
 
-# 1a - create histogram of threepwood data
+# import threepwood and emsworth data
 te_data <- read.xlsx("C:\\Users\\Loube\\OneDrive - William & Mary\\Bus_Stats_BUAD502A\\Assignments\\buad502a-m6-expert-dataset-net-worth.xls", 1)
 
 # calculate stats for data
@@ -11,3 +11,20 @@ te_n <- length(te_data$Customer..)
 te_nw <- te_data$Net.Worth
 te_mean <- mean(te_nw)
 te_sd <- sd(te_nw)
+summary(te_nw)
+
+# 1a - create histogram of threepwood data
+options(scipen = 10) # to display full value on graph
+
+hist(te_nw,
+     main = "Histogram of Net Worth for 325 Customers",
+     xlab = "Net Worth",
+     col = 'turquoise',
+     las = 1)
+
+qqnorm(te_nw) # check normality of data
+qqline(te_nw, col = 'red')
+te_nw[te_nw>800000] # outlier above 800k
+te_nw[te_nw<200000] # outlier below 200k
+
+

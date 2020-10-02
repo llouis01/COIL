@@ -12,6 +12,7 @@ te_nw <- te_data$Net.Worth
 te_mean <- mean(te_nw)
 te_sd <- sd(te_nw)
 summary(te_nw)
+te_se <- te_sd / sqrt(te_n)
 
 # 1a - create histogram of threepwood data
 options(scipen = 10) # to display full value on graph
@@ -27,4 +28,4 @@ qqline(te_nw, col = 'red')
 te_nw[te_nw>800000] # outlier above 800k
 te_nw[te_nw<200000] # outlier below 200k
 
-
+#

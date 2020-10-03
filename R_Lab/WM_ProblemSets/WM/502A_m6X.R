@@ -32,6 +32,9 @@ te_nw[te_nw<200000] # outlier below 200k
 t.test(te_nw, alternative = "two.sided", mu = 425000)
 # 2204460492503131 p-value
 
+# 2f
+te_ME <- 1.96 * te_se
+
 # 3a - histogram of bb
 
 # import data
@@ -44,3 +47,10 @@ bb_mean <- mean(bb_3p)
 bb_sd <- sd(bb_3p)
 summary(bb_3p)
 bb_se <- bb_sd / sqrt(bb_n)
+
+# histogram
+hist(bb_3p,
+     main = "Histogram of Average Three-Point Goals",
+     xlab = "Average Three-Pointer",
+     col = 'turquoise',
+     las = 1)

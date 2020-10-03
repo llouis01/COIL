@@ -69,5 +69,3 @@ lwr <- bb_mean - (1.97 * bb_se)
 upr <- bb_mean + (1.97 * bb_se)
 print(paste("Confidence Interval: (", round(lwr, 2), ", ",
             round(upr, 2), ")", sep = ""))
-
-

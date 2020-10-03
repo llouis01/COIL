@@ -59,3 +59,13 @@ hist(bb_3p,
      xlab = "Average Three-Pointer",
      col = 'turquoise',
      las = 1)
+
+qqnorm(bb_3p)
+qqline(bb_3p, col = 'red')
+
+
+# confidence interval
+lwr <- bb_mean - (1.97 * bb_se)
+upr <- bb_mean + (1.97 * bb_se)
+print(paste("Confidence Interval: (", round(lwr, 2), ", ",
+            round(upr, 2), ")", sep = ""))

@@ -31,6 +31,11 @@ te_nw[te_nw<200000] # outlier below 200k
 # 2c - t-test
 t.test(te_nw, alternative = "two.sided", mu = 425000)
 # 2204460492503131 p-value
+# can calculate with
+# > (te_mean - 425000) / te_se
+# [1] 12.20342
+# > 2 * pt(12.20342, 324, lower = F)
+# [1] 1.934493e-28
 
 # 2f
 te_ME <- 1.96 * te_se

@@ -38,7 +38,7 @@ t.test(te_nw, alternative = "two.sided", mu = 425000)
 # [1] 1.934493e-28
 
 # 2f
-te_ME <- 1.96 * te_se
+te_ME <- 1.966 * te_se
 
 # 3a - histogram of bb
 
@@ -71,4 +71,3 @@ print(paste("Confidence Interval: (", round(lwr, 2), ", ",
             round(upr, 2), ")", sep = ""))
 
 
-# 4

@@ -78,9 +78,10 @@ fib
 
 # for loop
 
-
-
-
+fib = rep( 1, 10)
+for (i in 3:10) {
+  fib[i] = fib[i - 1] + fib[i - 2]
+}
 
 ### Module 6
 

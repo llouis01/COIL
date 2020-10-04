@@ -41,3 +41,52 @@ is.palin = function(x){
 }
 
 is.palin("Anna")
+
+describe = function(x){
+  n = length(x)
+  if (n == 1) cat("The vector has 1 element.\n")
+  else        cat("The vector has ", n, "elements.\n")
+}
+
+describe('9384756')
+describe(1:13)
+describe(c(3, 5, 4, 'uty'))
+
+catalan = function(n) {
+  if (n < 0) stop("non-negative input only")
+  cat_n = ((factorial(2*n)) / (factorial(n + 1) * factorial(n)))
+  return(cat_n)
+}
+
+
+
+catalan(10)
+
+
+# fibonacci with while loop
+fib = numeric(10)
+fib[1] = 1
+fib[2] = 1
+i = 3
+j = 10
+
+while (i <= 10) {
+  fib[i] = fib[i - 1] + fib[i -2]
+  i = i + 1
+}
+fib
+
+# for loop
+
+
+
+
+
+### Module 6
+
+# Exercise 22.3
+
+n = 10
+
+factorial(2*n) / (factorial(n) * factorial(n + 1))
+

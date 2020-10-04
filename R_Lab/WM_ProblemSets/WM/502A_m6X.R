@@ -3,7 +3,7 @@
 # import needed libraries
 library(xlsx)
 
-# import threepwood and emsworth data
+# 1 import threepwood and emsworth data
 te_data <- read.xlsx("C:\\Users\\Loube\\OneDrive - William & Mary\\Bus_Stats_BUAD502A\\Assignments\\buad502a-m6-expert-dataset-net-worth.xls", 1)
 
 # calculate stats for data
@@ -28,6 +28,11 @@ qqline(te_nw, col = 'red')
 te_nw[te_nw>800000] # outlier above 800k
 te_nw[te_nw<200000] # outlier below 200k
 
+
+
+
+
+
 # 2c - t-test
 t.test(te_nw, alternative = "two.sided", mu = 425000)
 # 0.0000002204460492503131 p-value
@@ -41,6 +46,11 @@ t.test(te_nw, alternative = "two.sided", mu = 425000)
 te_ME <- 1.966 * te_se
 goal_ME <- te_ME * .40
 desired_n <- (1.966 * te_sd / goal_ME)^2
+
+
+
+
+
 
 
 # 3a - histogram of bb
@@ -72,3 +82,156 @@ lwr <- bb_mean - (1.97 * bb_se)
 upr <- bb_mean + (1.97 * bb_se)
 print(paste("Confidence Interval: (", round(lwr, 2), ", ",
             round(upr, 2), ")", sep = ""))
+
+
+
+
+
+
+# 4
+
+# import data
+wine <- read.xlsx("C:\\Users\\Loube\\OneDrive - William & Mary\\Bus_Stats_BUAD502A\\Assignments\\buad502a-m6-expert-dataset-wine.xls", 1)
+
+# 4a - convert to age
+wine$Cellar.1 = 2020 - wine$Cellar.1
+wine$Cellar.2 = 2020 - wine$Cellar.2
+wine
+
+# 4b - check data
+hist(wine$Cellar.1)
+qqnorm(wine$Cellar.1)
+qqline(wine$Cellar.1, col = 'red')
+
+hist(wine$Cellar.2)
+qqnorm(wine$Cellar.2)
+qqline(wine$Cellar.2, col = 'red')
+
+# 4c - sample means ofr age
+ybar_c1 <- mean(wine$Cellar.1)
+ybar_c2 <- mean(wine$Cellar.2, na.rm = T)
+
+# 4d - differences in mean wine ages from cc's
+ybar_cc <- ybar_c1 - ybar_c2
+# c1 wines tend to be on average .45 yr older than c2 wines (5-6 month)
+
+# 4e
+c1_var <- var(wine$Cellar.1)
+c2_var <- var(wine$Cellar.2, na.rm = T)
+
+# 4f
+sd_c1 <- sqrt(c1_var)
+sd_c2 <- sqrt(c2_var)
+
+# 4g
+c1 = wine$Cellar.1
+c1_n <- length(c1)
+c2 <- wine$Cellar.2
+c2_n <- length(na.omit(c2))
+
+se_cc <- sqrt(c1_var/c1_n + c2_var/c2_n)
+
+# 4h
+# H0: ybar_c1 = ybar_c2
+# Ha: ybar_c1 =/= ybar_c2
+tstat <- ybar_cc / se_cc
+
+
+
+
+
+# 5
+# H0: mu_c1 = mu_c2
+t.test(c1, c2, alternative = "two.sided")
+
+df_wines <- ((c1_var/c1_n + c2_var/c2_n)^2) / (((c1_var/c1_n)^2 / (c1_n - 1))  + ((c2_var/c2_n)^2 / (c2_n-1))) # verify df
+
+p_value <- 2 * pt(tstat, c1_n + c2_n - 2, lower = F)
+p_value2 <- 2* pt(tstat, min(c1_n - 1, c2_n - 2), lower = F)
+
+# the p-value which uses the lower degrees of freedom is more conser
+
+# At alpha 0.05, I fail to reject the null hypothesis stating that the mean ages in both cellars are equal #
+
+#### Welch Two Sample t-test ####
+
+# data:  c1 and c2
+# t = 0.25322, df = 109.44, p-value = 0.8006
+# alternative hypothesis: true difference in means is not equal to 0
+# 95 percent confidence interval:
+#   -3.067627  3.966328
+# sample estimates:
+#   mean of x mean of y
+# 21.48571  21.03636
+
+
+
+
+
+# 6a
+tstar <- abs(qt(0.05/2, df_wines))
+ll = ybar_cc - (tstar * se_cc)
+ul = ybar_cc + (tstar * se_cc)
+print(paste("Confidence Interval: (",
+            round(ll, 2), ", ",
+            round(ul, 2), ")"))
+
+t.test(c1, c2, alternative = 'two.sided', var.equal = T)
+
+pooled_var <- ((c1_n - 1)*c1_var + (c2_n - 1)*c2_var) / ((c1_n - 1) + (c2_n - 1))
+
+pooled_se <- sqrt(pooled_var/c1_n + pooled_var/c2_n)
+
+df <- c1_n + c2_n - 2
+
+tstat2 <- ybar_cc / pooled_se
+
+p_value3 <- 2 * pt(tstat2, df, lower = F)
+
+tstar2 <- abs(qt(0.05/2, df))
+ll2 = ybar_cc - (tstar2 * pooled_se)
+ul2 = ybar_cc + (tstar * pooled_se)
+print(paste("Confidence Interval: (",
+            round(ll2, 2), ", ",
+            round(ul2, 2), ")"))
+
+
+
+# 7
+
+# import data set
+glo_data <- read.xlsx("C:\\Users\\Loube\\OneDrive - William & Mary\\Bus_Stats_BUAD502A\\Assignments\\buad502a-m6-expert-dataset-blooms.xls", 1)
+
+glo_n = nrow(glo_data)
+glow_with = glo_data$With.Fertilizer
+glo_wout = glo_data$Without.Fertilizer
+
+# same flower variety, different individual, receiving or not receiving
+
+hist(glo_data$With.Fertilizer)
+hist(glo_data$Without.Fertilizer)
+
+# create diff column for comparison
+glo_data$Diff <- glo_data$With.Fertilizer - glo_data$Without.Fertilizer
+
+# mean difference
+mean_diff <- mean(glo_data$Diff)
+
+# sd of diff
+sd_diff <- sd(glo_data$Diff)
+
+# se of mean diff
+se_dbar = sd_diff / sqrt(glo_n)
+
+# t-test
+t.test(glow_with, glo_wout, alternative = 'greater', paired = T)
+
+#tstat
+glo_tstat <- mean_diff / se_dbar
+
+glo_df <- glo_n - 1
+
+# one-sided; > 0
+
+# p-value
+glo_pval <- pt(glo_tstat, glo_df, lower = FALSE) # one-sided

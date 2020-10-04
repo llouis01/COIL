@@ -60,3 +60,22 @@ p_value2 <- 2* pt(tstat, min(c1_n - 1, c2_n - 2), lower = F)
 # the p-value which uses the lower degrees of freedom is more conser
 
 # At alpha 0.05, I fail to reject the null hypothesis stating that the mean ages in both cellars are equal #
+
+#### Welch Two Sample t-test ####
+
+# data:  c1 and c2
+# t = 0.25322, df = 109.44, p-value = 0.8006
+# alternative hypothesis: true difference in means is not equal to 0
+# 95 percent confidence interval:
+#   -3.067627  3.966328
+# sample estimates:
+#   mean of x mean of y
+# 21.48571  21.03636
+
+# 6a
+tstar <- abs(qt(0.05/2, df_wines))
+ll = ybar_cc - (tstar * se_cc)
+ul = ybar_cc + (tstar * se_cc)
+print(paste("Confidence Interval: (",
+            round(ll, 2), ", ",
+            round(ul, 2), ")"))

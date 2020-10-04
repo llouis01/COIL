@@ -91,3 +91,10 @@ df <- c1_n + c2_n - 2
 tstat2 <- ybar_cc / pooled_se
 
 p_value3 <- 2 * pt(tstat2, df, lower = F)
+
+tstar2 <- abs(qt(0.05/2, df))
+ll2 = ybar_cc - (tstar2 * pooled_se)
+ul2 = ybar_cc + (tstar * pooled_se)
+print(paste("Confidence Interval: (",
+            round(ll2, 2), ", ",
+            round(ul2, 2), ")"))

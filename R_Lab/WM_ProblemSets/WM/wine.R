@@ -52,4 +52,4 @@ c2_n <- length(na.omit(c2))
 
 t.test(c1, c2, alternative = "two.sided")
 
-df_wines <- (c1_var/c1_n + c2_var/c2_n)^2 / ((c1_var/c1_n)^2 / (c1_n - 1))  + ((c2_var/c2_n)^2 / (c2_n-1))
+df_wines <- ((c1_var/c1_n + c2_var/c2_n)^2) / (((c1_var/c1_n)^2 / (c1_n - 1))  + ((c2_var/c2_n)^2 / (c2_n-1))) # verify df

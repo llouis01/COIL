@@ -30,7 +30,7 @@ te_nw[te_nw<200000] # outlier below 200k
 
 # 2c - t-test
 t.test(te_nw, alternative = "two.sided", mu = 425000)
-# 2204460492503131 p-value
+# 0.0000002204460492503131 p-value
 # can calculate with
 # > (te_mean - 425000) / te_se
 # [1] 12.20342
@@ -39,6 +39,9 @@ t.test(te_nw, alternative = "two.sided", mu = 425000)
 
 # 2f
 te_ME <- 1.966 * te_se
+goal_ME <- te_ME * .40
+desired_n <- (1.966 * te_sd / goal_ME)^2
+
 
 # 3a - histogram of bb
 

@@ -1,7 +1,6 @@
 # 4
 
 # import data
-library(xlsx)
 wine <- read.xlsx("C:\\Users\\Loube\\OneDrive - William & Mary\\Bus_Stats_BUAD502A\\Assignments\\buad502a-m6-expert-dataset-wine.xls", 1)
 
 # 4a - convert to age
@@ -37,3 +36,20 @@ sd_c2 <- sqrt(c2_var)
 # 4g
 se_cc <- sqrt(c1_var/length(wine$Cellar.1) + c2_var/length(na.omit(wine$Cellar.2)))
 
+# 4h
+# H0: ybar_c1 = ybar_c2
+# Ha: ybar_c1 =/= ybar_c2
+tstat <- ybar_cc / se_cc
+
+
+
+# 5
+# H0: mu_c1 = mu_c2
+c1 = wine$Cellar.1
+c1_n <- length(c1)
+c2 <- wine$Cellar.2
+c2_n <- length(na.omit(c2))
+
+t.test(c1, c2, alternative = "two.sided")
+
+df_wines <- (c1_var/c1_n + c2_var/c2_n)^2 / ((c1_var/c1_n)^2 / (c1_n - 1))  + ((c2_var/c2_n)^2 / (c2_n-1))

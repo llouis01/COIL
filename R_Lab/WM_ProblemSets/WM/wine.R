@@ -33,3 +33,7 @@ c2_var <- var(wine$Cellar.2, na.rm = T)
 # 4f
 sd_c1 <- sqrt(c1_var)
 sd_c2 <- sqrt(c2_var)
+
+# 4g
+se_cc <- sqrt(c1_var/length(wine$Cellar.1) + c2_var/length(na.omit(wine$Cellar.2)))
+

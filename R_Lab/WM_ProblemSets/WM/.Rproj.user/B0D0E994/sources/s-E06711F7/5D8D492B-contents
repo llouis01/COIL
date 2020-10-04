@@ -29,3 +29,15 @@ leapyear(2021)
 leapyear(2022)
 leapyear(2023)
 leapyear(2024)
+
+
+strRev = function(x) {
+  paste(rev(substring(x, 1:nchar(x), 1:nchar(x))), collapse = "")
+}
+
+is.palin = function(x){
+  if (mode(x) != 'character') stop('Non-character Input')
+  if (x == strRev(x)) print('It\'s a palindrome') else return(FALSE)
+}
+
+is.palin("Anna")

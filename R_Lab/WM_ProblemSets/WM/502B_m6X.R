@@ -15,3 +15,17 @@ my.abs(0)
 my.abs(9)
 my.abs(c(-2, 0, 3, -17))
 my.abs("hello")
+
+my_cars = cars
+
+leapyear = function(year) {
+  # if year divisible by 4 but not by 100 and divisble by 400
+  if (year %% 4 == 0 && year %% 100 != 0 || year %% 400 == 0)
+    return(TRUE)
+  else
+    return(FALSE)
+}
+leapyear(2021)
+leapyear(2022)
+leapyear(2023)
+leapyear(2024)

@@ -79,3 +79,15 @@ ul = ybar_cc + (tstar * se_cc)
 print(paste("Confidence Interval: (",
             round(ll, 2), ", ",
             round(ul, 2), ")"))
+
+t.test(c1, c2, alternative = 'two.sided', var.equal = T)
+
+pooled_var <- ((c1_n - 1)*c1_var + (c2_n - 1)*c2_var) / ((c1_n - 1) + (c2_n - 1))
+
+pooled_se <- sqrt(pooled_var/c1_n + pooled_var/c2_n)
+
+df <- c1_n + c2_n - 2
+
+tstat2 <- ybar_cc / pooled_se
+
+p_value3 <- 2 * pt(tstat2, df, lower = F)

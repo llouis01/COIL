@@ -1,7 +1,0 @@
-for (x in 1:8){
-  for (y in 1:8){
-    plot(0,0, xlim=c(0,8), ylim=c(0,8), axes=F, ylab = "", xlab = "")
-      polygon(c(0, 0, 1, 1), c(0, 1, 1, 0), col = 'red')
-  }
-}
-

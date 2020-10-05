@@ -110,7 +110,6 @@ factorial(2*n) / (factorial(n) * factorial(n + 1))
 
 
 
-
 # 23.4
 n = 1000000
 x <- rpois(n, 3) + rpois(n, 5)

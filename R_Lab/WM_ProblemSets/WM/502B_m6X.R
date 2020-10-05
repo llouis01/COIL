@@ -96,15 +96,37 @@ fact1 = function(x) {
 # sieve of eratosthenes
 prime =
 
+
+
 ### Module 6
 
-# Exercise 22.3
-
+# 22.3
 n = 10
 
-
+choose(2*n, n) / (n + 1)
 factorial(2*n) / (factorial(n) * factorial(n + 1))
+
+
+
+
+
 
 # 23.4
 n = 1000000
 x <- rpois(n, 3) + rpois(n, 5)
+
+
+
+
+# 24.2
+Fib = function(n) {
+  if (n < 0) stop('non-negative input')
+  i = rep(1, n)
+  if (n == 1) return(1)
+  if (n == 0) return(0)
+  i[3] = 3
+  return(Fib(n -1) + Fib(n -2))
+}
+
+Fib(6)
+

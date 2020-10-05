@@ -1,0 +1,8 @@
+Fib = function(n) {
+  # returns the nth number in the fibonacci squence
+  if (n < 0) stop("Non-negative input only")
+  fib = numeric(n)
+  fib[1] = 1
+  fib[2] = 1
+  
+}

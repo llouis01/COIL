@@ -82,6 +82,19 @@ fib = rep( 1, 10)
 for (i in 3:10) {
   fib[i] = fib[i - 1] + fib[i - 2]
 }
+fib
+
+fact1 = function(x) {
+  if (x<0) stop('non-negative input')
+  i = 1
+  for (j in 2:x) i = i * j
+  return(i)
+}
+
+
+
+# sieve of eratosthenes
+prime =
 
 ### Module 6
 
@@ -89,5 +102,9 @@ for (i in 3:10) {
 
 n = 10
 
+
 factorial(2*n) / (factorial(n) * factorial(n + 1))
 
+# 23.4
+n = 1000000
+x <- rpois(n, 3) + rpois(n, 5)

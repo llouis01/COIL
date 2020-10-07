@@ -55,9 +55,9 @@ par(mfrow = c(1,1))
 nrep = 100000
 count = 0
 for (i in 1:nrep) {
-  x = sample(c("M", "W", "M", "W", "M"))
-  if (all(x[c(1, 3, 5)] == "M")) count = count + 1
-}
+  x = sample(5)
+  if (x[1] * x[3] * x[5] == 15) count = count + 1
+} # 15 is from the position of the odd numbers; odd = male
 print(count/nrep)
 
 
@@ -69,3 +69,23 @@ for (i in 1:nrep) {
   if (sum(roll) == 10) count = count + 1
 }
 print(count/nrep)
+
+
+### Exercise 25.2
+nrep = 100000
+count = 0
+for (i in 1:nrep){
+  roll = sample(1:6, 6, replace = F)
+  if (roll == c(1, 2, 3, 4, 5, 6)) count = count + 1
+}
+print(count/nrep)
+print(roll)
+
+
+### Exercise 25.3
+nrep = 100000
+count = 0
+for (i in range 1:nrep){
+
+}
+}

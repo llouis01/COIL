@@ -3,7 +3,7 @@
     "path": "~/GitHub/Data_Analysis/R_Lab/WM_ProblemSets/WM/502A_m7X.R",
     "project_path": "502A_m7X.R",
     "type": "r_source",
-    "hash": "0",
+    "hash": "592071171",
     "contents": "",
     "dirty": false,
     "created": 1601948705550.0,
@@ -11,15 +11,15 @@
     "relative_order": 1,
     "properties": {
         "tempName": "Untitled1",
-        "cursorPosition": "19,0",
+        "cursorPosition": "30,43",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1601950835,
+    "lastKnownWriteTime": 1602031960,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1601950835695,
+    "last_content_update": 1602031960877,
     "read_only": false,
     "read_only_alternatives": []
 }

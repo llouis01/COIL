@@ -51,3 +51,21 @@ points(u[60], u[1], pch = 10)
 par(mfrow = c(1,1))
 
 
+### Monte Carlo for alternating men and women in 5 chairs
+nrep = 100000
+count = 0
+for (i in 1:nrep) {
+  x = sample(c("M", "W", "M", "W", "M"))
+  if (all(x[c(1, 3, 5)] == "M")) count = count + 1
+}
+print(count/nrep)
+
+
+### Monte Carlo simulating the probability of roling a ten in 3 fair dice
+nrep = 100000
+count = 0
+for (i in 1:nrep) {
+  roll = sample(1:6, 3, replace = T)
+  if (sum(roll) == 10) count = count + 1
+}
+print(count/nrep)

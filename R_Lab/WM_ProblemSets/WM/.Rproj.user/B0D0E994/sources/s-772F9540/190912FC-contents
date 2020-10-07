@@ -24,8 +24,24 @@ coef(casi_lm) # obtain coefficient
 
 # with a, m and x0
 
-x = numeric(61) # list must have length(mod) because generator is full period
+x = numeric(14) # list must have length(mod) because generator is full period
 x[1] = 3 # set as seed
-for (i in 2:61) x[i] = (7 * x[i - 1]) %% 61
+for (i in 2:14) x[i] = (7 * x[i - 1]) %% 61
 print(x)
 # notice how the list went back to the seed
+
+plot(x/61)
+plot(runif(14))
+
+x = numeric(60) # list must have length(mod) because generator is full period
+x[1] = 3 # set as seed
+for (i in 2:60) x[i] = (7 * x[i - 1]) %% 61
+u = x/61
+plot(0, 0, type = 'n', xlim = c(0,1), ylim = c(0,1))
+for (i in 2:60) points(u[i - 1], u[i], pch = 10)
+points(u[60], u[1], pch = 10) # plot for pairs of random numbers
+
+
+u =
+
+

@@ -64,7 +64,8 @@ print(roll)
 ### Exercise 25.3
 nrep = 100000
 count = 0
-for (i in range 1:nrep){
-
+for (i in 1:nrep){
+  x = sample(1:10, 100)
+  if (x == 3) count = count + 1
 }
-}
+print(count/nrep)

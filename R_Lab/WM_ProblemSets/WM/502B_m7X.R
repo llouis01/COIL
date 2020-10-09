@@ -68,5 +68,6 @@ count = 0
 for (i in 1:nrep) {
   x = sample(c(rep('x', 40), c(rep('y', 10))))
   if (x == c('x', 'y', 'x')) count = count + 1
+  print(x)
 }
 print(count/nrep)

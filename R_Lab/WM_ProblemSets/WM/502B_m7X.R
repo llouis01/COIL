@@ -40,7 +40,7 @@ for (i in 1:nrep) {
 print(count/nrep)
 
 
-### Monte Carlo simulating the probability of roling a ten in 3 fair dice
+### Monte Carlo simulating the probability of rolling a ten in 3 fair dice
 nrep = 100000
 count = 0
 for (i in 1:nrep) {
@@ -64,8 +64,8 @@ print(roll) # check the rolls for verification
 ### Exercise 25.3
 nrep = 100000
 count = 0
-for (i in 1:nrep){
-  x = sample(1:10, 100)
-  if (x == 3) count = count + 1
+for (i in 1:nrep) {
+  x = sample(c(rep('x', 40), c(rep('y', 10))))
+  if (x == c('x', 'y', 'x')) count = count + 1
 }
 print(count/nrep)

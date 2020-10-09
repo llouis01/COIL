@@ -54,11 +54,12 @@ print(count/nrep)
 nrep = 100000
 count = 0
 for (i in 1:nrep){
-  roll = sample(1:6, 6, replace = F) # 6 faces, 6 rolls. no replace
-  if (roll == c(1, 2, 3, 4, 5, 6)) count = count + 1
+  roll = sample(1:6, 6, replace = T) # 6 faces, 6 rolls. no replace
+  if (roll == sample(c(1, 2, 3, 4, 5, 6))) count = count + 1
+  print(roll)
 }
 print(count/nrep)
-print(roll) # check the rolls for verification
+#print(roll) # check the rolls for verification
 
 
 ### Exercise 25.3

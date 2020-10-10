@@ -71,3 +71,20 @@ for (i in 1:nrep) {
   print(x)
 }
 print(count/nrep)
+
+
+
+### Urn exercise
+set.seed(4)
+nrep = 100000
+count = 0
+for (i in 1:nrep){
+urn1 = c(0, 0, 0, 1, 1)
+urn2 = c(0, 1, 1, 1)
+x = sample(5, 1) # index for urn1 first ball
+urn2 = c(urn2, urn1[x]) # transfer ball from urn1 to urn2
+y = sample(5, 1) # set y as index of urn 2 ball picked
+urn1[x] = urn2[y] # transfer from urn2 to urn1
+if (sample(urn1, 1)==1) count = count + 1
+}
+print(count/nrep)

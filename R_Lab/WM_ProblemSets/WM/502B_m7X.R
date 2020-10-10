@@ -100,3 +100,19 @@ y1 = runif(nrep)
 y2 = runif(nrep)
 d = sqrt((x1 - x2)^2 + (y1 - y2)^2)
 sort(d)[0.9 * nrep] # sort results based on the 90th percentile
+
+
+
+#### 25.4
+nrep = 500000
+count = 0
+for (i in 1:nrep) {
+  roll = sample(6, 5)
+  # print(roll)
+if (roll[1] == roll[2]-1 && roll[2] == roll[3]-1) count = count + 1
+print(roll[1])
+print(roll[2])
+print(roll[3])
+}
+
+print(count)

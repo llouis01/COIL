@@ -88,3 +88,15 @@ urn1[x] = urn2[y] # transfer from urn2 to urn1
 if (sample(urn1, 1)==1) count = count + 1
 }
 print(count/nrep)
+
+
+
+
+### calculate 90th percentile between 2 points
+nrep = 1000000
+x1 = runif(nrep)
+x2 = runif(nrep)
+y1 = runif(nrep)
+y2 = runif(nrep)
+d = sqrt((x1 - x2)^2 + (y1 - y2)^2)
+sort(d)[0.9 * nrep] # sort results based on the 90th percentile

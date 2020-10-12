@@ -147,3 +147,6 @@ xbar + c(-1, 1) * half
 
 
 ##### 27.3
+A = matrix(c(-1, 1, 3, 0, 2, 4), 2, 3, byrow = T)
+AA_t = A %*% t(A)
+AA_t

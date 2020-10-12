@@ -141,6 +141,6 @@ n = length(precip)
 xbar = mean(precip)
 critv = qt(1 - 0.1/2, n - 1)
 sdev = sd(precip)
-se = sd/sqrt(n)
+se = sdev/sqrt(n)
 half = critv * se
 xbar + c(-1, 1) * half

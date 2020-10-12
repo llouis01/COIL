@@ -144,3 +144,6 @@ sdev = sd(precip)
 se = sdev/sqrt(n)
 half = critv * se
 xbar + c(-1, 1) * half
+
+
+##### 27.3

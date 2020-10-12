@@ -41,13 +41,54 @@ print(count/nrep)
 
 
 ### Monte Carlo simulating the probability of rolling a ten in 3 fair dice
-nrep = 100000
+nrep = 1000000
 count = 0
 for (i in 1:nrep) {
   roll = sample(1:6, 3, replace = T)
   if (sum(roll) == 10) count = count + 1
 }
 print(count/nrep)
+
+
+
+### Urn exercise
+set.seed(4)
+nrep = 100000
+count = 0
+for (i in 1:nrep){
+urn1 = c(0, 0, 0, 1, 1)
+urn2 = c(0, 1, 1, 1)
+x = sample(5, 1) # index for urn1 first ball
+urn2 = c(urn2, urn1[x]) # transfer ball from urn1 to urn2
+y = sample(5, 1) # set y as index of urn 2 ball picked
+urn1[x] = urn2[y] # transfer from urn2 to urn1
+if (sample(urn1, 1)==1) count = count + 1
+}
+print(count/nrep)
+
+
+
+
+### calculate 90th percentile between 2 points
+nrep = 4000000
+x1 = runif(nrep)
+x2 = runif(nrep)
+y1 = runif(nrep)
+y2 = runif(nrep)
+d = sqrt((x1 - x2)^2 + (y1 - y2)^2)
+sort(d)[0.9 * nrep] # sort results based on the 90th percentile
+
+for (i in 1:20) {
+  plot(runif(2), runif(2), pch = 19, xlim = c(0,1), ylim = c(0,1), type = 'o')
+  Sys.sleep(1)
+}
+
+
+
+
+################################################
+
+
 
 
 ### Exercise 25.2
@@ -73,49 +114,15 @@ for (i in 1:nrep) {
 print(1 - (count/nrep))
 
 
-
-### Urn exercise
-set.seed(4)
-nrep = 100000
-count = 0
-for (i in 1:nrep){
-urn1 = c(0, 0, 0, 1, 1)
-urn2 = c(0, 1, 1, 1)
-x = sample(5, 1) # index for urn1 first ball
-urn2 = c(urn2, urn1[x]) # transfer ball from urn1 to urn2
-y = sample(5, 1) # set y as index of urn 2 ball picked
-urn1[x] = urn2[y] # transfer from urn2 to urn1
-if (sample(urn1, 1)==1) count = count + 1
-}
-print(count/nrep)
-
-
-
-
-### calculate 90th percentile between 2 points
-nrep = 1000000
-x1 = runif(nrep)
-x2 = runif(nrep)
-y1 = runif(nrep)
-y2 = runif(nrep)
-d = sqrt((x1 - x2)^2 + (y1 - y2)^2)
-sort(d)[0.9 * nrep] # sort results based on the 90th percentile
-
-
-
 #### 25.4
+set.seed(3)
 nrep = 500000
 count = 0
 for (i in 1:nrep) {
-  roll = sample(6, 5)
-  # print(roll)
-if (roll[1] == roll[2]-1 && roll[2] == roll[3]-1) count = count + 1
-print(roll[1])
-print(roll[2])
-print(roll[3])
+  roll = sample(6, 5, replace = T)
+  if (sum(roll[1:3])==3 | sum(roll[2:4])==3 | sum(roll[3:5])==3) count = count + 1
 }
-print(count)
-
+print(count/nrep)
 
 
 #### 25.10

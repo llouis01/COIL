@@ -17,3 +17,13 @@ casi_lm <- lm(casi$Casino.Revenue.in..1.000.000.s~casi$Number.of.free..5.poker.c
 casi_lm <- lm(casi$Casino.Revenue.in..1.000.000.s~casi$Number.of.free..5.poker.chips.given.away.)
 
 coef(casi_lm) # obtain coefficient
+
+
+
+
+#######################################
+obs <- c(211, 169, 43)
+prop <- c(.55, .325, .125)
+n <- 423
+
+expc <- prop * n

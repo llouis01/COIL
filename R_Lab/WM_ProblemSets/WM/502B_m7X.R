@@ -56,21 +56,21 @@ count = 0
 for (i in 1:nrep){
   roll = sample(1:6, 6, replace = T) # 6 faces, 6 rolls. no replace
   if (roll == sample(c(1, 2, 3, 4, 5, 6))) count = count + 1
-  print(roll)
 }
 print(count/nrep)
+print(count)
 #print(roll) # check the rolls for verification
 
 
 ### Exercise 25.3
 nrep = 100000
 count = 0
+set.seed(4)
 for (i in 1:nrep) {
-  x = sample(c(rep('x', 40), c(rep('y', 10))))
-  if (x == c('x', 'y', 'x')) count = count + 1
-  print(x)
+  x = sample(rep(c('x', 'y'), c(40, 10)))
+  if(any(head(x, -1) == 'y' & tail(x, -1) == 'y')) count = count + 1
 }
-print(count/nrep)
+print(1 - (count/nrep))
 
 
 
@@ -114,5 +114,15 @@ print(roll[1])
 print(roll[2])
 print(roll[3])
 }
-
 print(count)
+
+
+
+#### 25.10
+nrep = 100000
+count = 0
+for (i in 1:nrep) {
+  x = sample(6, 5, replace = T)
+  if (min(x) >= 2) count = count + 1
+}
+print(count/nrep)

@@ -80,8 +80,47 @@ colnames(goods) <- c("New", "Open Box",
 goods <- data.frame(goods)
 goods
 
-# 3b
+# 3a
 goods$Total[2] / goods$Total[3] # elec probability
 
-# prob of b given a | question 3c
+# 3b
+goods$Used[1]/goods$Total[3]
+
+# 3c
 goods$New[1] / goods$Total[3] / (goods$New[3] / goods$Total[3])
+
+# 3d
+# total of electronic items regardless of condition
+(goods$Total[2] / goods$Total[3]) * goods$Total[3]
+
+# 3f
+probs <- 1/8
+exp_hshld <- c(probs*goods$Total[3],probs*goods$Total[3],probs*goods$Total[3],probs*goods$Total[3],4*probs*goods$Total[3])
+
+exp_elec <- c(probs*goods$Total[3],probs*goods$Total[3],probs*goods$Total[3],probs*goods$Total[3],4*probs*goods$Total[3])
+goods <- rbind(goods, exp_hshld, exp_elec)
+goods
+
+hshld_res <- ((goods[1,] - goods[4,])**2)/exp_hshld
+elec_res <- ((goods[2, ] - goods[5,])**2)/exp_elec
+chi <- sum(exp_hshld, exp_elec)
+chi
+
+p_val <- 1 - pchisq(chi, 3)
+
+
+
+######## question 4
+
+hshld_finish <- c(533, 995)
+elec_finish <- c(467, 754)
+goods_finish <- rbind(hshld_finish, elec_finish)
+goods_finish
+colnames(goods_finish) <- c("Stainless", "Other")
+goods_finish
+chisq.test(goods_finish)
+
+
+
+
+################  question 5

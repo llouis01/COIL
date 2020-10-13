@@ -110,6 +110,7 @@ p_val <- 1 - pchisq(chi, 3)
 
 
 
+
 ######## question 4
 
 hshld_finish <- c(533, 995)
@@ -140,4 +141,52 @@ ul <- diff + halfwidth
 ll # lower level
 ul # upper level
 
+
+
+
 ################  question 5
+rm(list=ls())
+
+library(xlsx)
+
+sheep <- read.xlsx("C:\\Users\\Loube\\OneDrive - William & Mary\\Bus_Stats_BUAD502A\\Assignments\\buad502a-m7-expert-dataset3-sheep.xls", 1)
+
+sheep_lm <- lm(sheep$Farm.Revenue.per.month~sheep$Number.of.apples.fed.to.sheep.per.day.per.month.)
+
+summary(sheep_lm)
+
+plot(sheep$Number.of.apples.fed.to.sheep.per.day.per.month., sheep$Farm.Revenue.per.month,
+     main = "Revenue from Apple-fed Sheep",
+     xlab = "Number of Apple Fed per Month",
+     ylab = "Revenue per Month",
+     las = 1,
+     col = 'turquoise')
+abline(sheep_lm$coefficients, col = 'red')
+
+
+reg_line <- function(x) {
+  res <- sheep_lm$coefficients[1] + (sheep_lm$coefficients[2] * x)
+  return(res)
+}
+reg_line(1200)
+
+apple_1200 <- as.numeric(1200 * coef(sheep_lm)[2] + coef(sheep_lm)[1])
+apple_1200
+
+se<- as.numeric(summary(sheep_lm)[6])
+se
+ll <- apple_1200 - (1.96 * se)
+ul <- apple_1200 + (1.96 * se)
+ll
+ul
+
+summary(sheep_lm)[6] # spread around the line
+
+apple_25000 <- as.numeric(25000 * coef(sheep_lm)[2] + coef(sheep_lm)[1])
+apple_25000
+
+
+ll25000 <- apple_25000 - (1.96 * se)
+ul25000 <- apple_25000 + (1.96 * se)
+ll25000
+ul25000

@@ -121,6 +121,23 @@ goods_finish
 chisq.test(goods_finish)
 
 
+# confidence interval
+stain_finsih <- 1000
+other_finsih <- 1749
 
+phat_stainless <- stain_finsih / 2749
+phat_other <- other_finsih/2749 # 2749 is the total of both
+
+diff <- phat_stainless - phat_other
+
+se <- sqrt((phat_stainless * (1 - phat_stainless)) / 1000) +
+  (phat_other * (1 - phat_other)/1749)
+
+halfwidth <- (1.96 * se)
+ll <- diff - halfwidth
+ul <- diff + halfwidth
+
+ll # lower level
+ul # upper level
 
 ################  question 5

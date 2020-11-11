@@ -30,3 +30,22 @@ A = cbind(col1, col2)
 A
 t(A)
 A %*% t(A)
+
+
+## 3.2.39
+A = matrix(c(1, 1, -1, 4, 6, -2, 4, 5, -1), 3, 3, byrow = T)
+solve(A)
+
+
+### leontif open model
+C = matrix(c(.9, .1, .2, .6), 2, 2)
+D = c(100, 200)
+I = diag(2)
+
+X = solve(I - C) %*% D
+X
+X = solve(I - C, D)
+X
+
+4000 - (.9 * 4000) - (.2 * 1500)
+1500 - (.1 * 4000) - (.6 * 1500)

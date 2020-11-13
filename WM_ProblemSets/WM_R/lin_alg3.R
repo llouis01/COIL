@@ -67,3 +67,8 @@ inv_IC = matrix(c(.214, .143, .071, .0429, .229, .0143, .371, .31, .45), 3, 3)
 inv_IC = inv_IC * 100
 
 inv_IC %*% D
+
+## calc determinants
+A = matrix(c(6, 4, 5, 7, 2, 1, -5, -3, 8), 3, 3, byrow = T)
+A
+det(A)

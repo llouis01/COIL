@@ -72,3 +72,7 @@ inv_IC %*% D
 A = matrix(c(6, 4, 5, 7, 2, 1, -5, -3, 8), 3, 3, byrow = T)
 A
 det(A)
+
+B = matrix(c(0, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 0), 4, 4, byrow = T)
+B
+det(B)

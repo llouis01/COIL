@@ -82,3 +82,6 @@ det(B)
 A = matrix(c(6, -6, 0, 0, 2, -1, -6, 0, 3), 3, 3, byrow = T)
 A
 det(A)
+
+A = matrix(c(2, 8, 3, -7), 2, 2, byrow = T)
+det(A)

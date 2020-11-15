@@ -85,3 +85,28 @@ det(A)
 
 A = matrix(c(2, 8, 3, -7), 2, 2, byrow = T)
 det(A)
+
+
+# markov
+TT = matrix(c(4/5, 2/5, 1/5, 3/5), 2, 2, byrow = T)
+initial = c(1/3, 2/3)
+library(MASS)
+fractions(initial)
+fractions(TT %*% initial)
+fractions(TT %*% TT %*% initial)
+
+fractions(TT %*% TT)
+
+## 3.6.1
+A = matrix(c((3/4), 3/8, 1/4, 5/8), 2, 2, byrow = T)
+A = fractions(A)
+initiala = c(.4, .6)
+initial2 = fractions(A) %*% initiala
+# ((3/4 * 2/5) + (3/8*3/5))
+# ((1/4 * 2/5) + (5/8 * 3/5))
+initialb = A %*% A %*% initiala
+fractions(A %*% A)
+#((3/4 * 3/4) + (3/8 * 1/4))
+#((3/4 * 3/8) + (3/8*5/8))
+#((1/4*3/4) + (5/8 * 1/4))
+#((1/4 * 3/8) + (5/8*5/8))

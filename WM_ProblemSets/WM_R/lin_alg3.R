@@ -97,16 +97,20 @@ fractions(TT %*% TT %*% initial)
 
 fractions(TT %*% TT)
 
-## 3.6.1
+##### 3.6.1
 A = matrix(c((3/4), 3/8, 1/4, 5/8), 2, 2, byrow = T)
 A = fractions(A)
-initiala = c(.4, .6)
-initial2 = fractions(A) %*% initiala
+initial0 = c(.4, .6)
+initial1 = fractions(A) %*% initial0
 # ((3/4 * 2/5) + (3/8*3/5))
 # ((1/4 * 2/5) + (5/8 * 3/5))
-initialb = A %*% A %*% initiala
-fractions(A %*% A)
+##
+A_sq = fractions(A %*% A)
 #((3/4 * 3/4) + (3/8 * 1/4))
 #((3/4 * 3/8) + (3/8*5/8))
 #((1/4*3/4) + (5/8 * 1/4))
 #((1/4 * 3/8) + (5/8*5/8))
+initial2 = A_sq %*% initial0
+# ((21/32*.4) + (33/64*.6))
+#((11/32*.4) + (31/64*.6))
+#####

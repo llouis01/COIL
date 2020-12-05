@@ -51,3 +51,14 @@ P = eigen(TT)$vectors
 P
 P %*% D^7 %*% solve(P)
 ###
+
+
+#### 6.3.9
+
+A = matrix(c(2.5, 2.5, 1, 1), 2, 2, byrow = T)
+A
+B = matrix(c(1, 0, 0, 0.00243), 2, 2, byrow = T)
+B
+C = matrix(c(1, 1, -1, 2.5), 2, 2, byrow = T)
+C
+1/3.5 * (A %*% B %*% C)
